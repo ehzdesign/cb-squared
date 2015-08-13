@@ -16,9 +16,20 @@
 // MIXINS
 // =============================================
 
-//FONT MIXINS
+//FONT MIXIN
 
 @mixin italic(){
   font-weight: $font-weight--normal;
   font-style: italic;
 }
+
+
+//BACKGROUND IMAGE MIXIN
+
+@mixin img-replace($img, $w, $h, $disp: block){
+  background-image: url("#{path--rel}/#{$img}");
+  background-repeat: no-repeat;
+  width: $w;
+  height: $h;
+  display: $disp;
+};
