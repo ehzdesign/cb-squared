@@ -1,0 +1,11 @@
+/*header styles*/
+
+.header{
+  @include outer-container(100vw);
+  @include display(flex);
+  @include pad(20px);
+}
+
+.main-logo{
+  @include span-columns(3);
+ }

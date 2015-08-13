@@ -1,11 +1,15 @@
+// @import "base/normalize";
+
 @import "../lib/bourbon/bourbon";
 @import "../lib/neat/neat";
+
 
 @import "helpers/config";
 @import "helpers/utilities";
 
-@import "base/normalize";
+@import "base/base";
 @import "base/typography";
 
-@import "layout/header";
-@import "layout/footer";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/navigation";
