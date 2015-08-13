@@ -4,5 +4,8 @@
 @import "helpers/config";
 @import "helpers/utilities";
 
+@import "base/normalize";
+@import "base/typography";
+
 @import "layout/header";
 @import "layout/footer";
