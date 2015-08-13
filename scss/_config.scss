@@ -30,8 +30,13 @@ $color-text-light       : $white;
 
 //FONT STACKS
 
+@include font-face('ostrich-sans--regular', '../fonts/ostrich-sans/ostrich-regular' );
+
 $font-url--google       : 'http://fonts.googleapis.com/css?family=Karla:400,700,400italic';
 $font-family--primary   : 'Karla', $helvetica;
+$font-family--secondary : 'ostrich-sans--regular', $lucida-grande;
+
+
 
 
 
