@@ -1,0 +1,24 @@
+// =============================================
+// UTILITIES
+// =============================================
+
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google){
+  @import url($font-url--google);
+}
+
+
+
+
+
+// =============================================
+// MIXINS
+// =============================================
+
+//FONT MIXINS
+
+@mixin italic(){
+  font-weight: $font-weight--normal;
+  font-style: italic;
+}

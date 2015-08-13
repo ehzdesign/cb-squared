@@ -41,13 +41,6 @@ $font-weight--normal    : 400;
 $font-weight--bold      : 700;
 
 
-//FONT MIXINS
-
-@mixin italic(){
-  font-weight: $font-weight--normal;
-  font-style: italic;
-}
-
 
 
 
