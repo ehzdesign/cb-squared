@@ -1,5 +1,8 @@
 @import "../lib/bourbon/bourbon";
 @import "../lib/neat/neat";
 
-@import "config";
-@import "utilities";
+@import "helpers/config";
+@import "helpers/utilities";
+
+@import "layout/header";
+@import "layout/footer";
