@@ -28,6 +28,26 @@ $color-text-dark        : $scorpion;
 $color-text-light       : $white;
 
 
+//FONT STACKS
+
+$font-url--google       : 'http://fonts.googleapis.com/css?family=Karla:400,700,400italic';
+$font-family--primary   : 'Karla', $helvetica;
+
+
+
+//FONT WEIGHT
+
+$font-weight--normal    : 400;
+$font-weight--bold      : 700;
+
+
+//FONT MIXINS
+
+@mixin italic(){
+  font-weight: $font-weight--normal;
+  font-style: italic;
+}
+
 
 
 
