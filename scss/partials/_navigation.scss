@@ -1,0 +1,32 @@
+nav{
+  @include fill-parent();
+  @include display(flex);
+  @include align-items(center);
+
+  // @include span-columns(9);
+}
+
+.main-nav{
+  @include fill-parent;
+  @include shift(2);
+  @include display(flex);
+  @include justify-content(space-around);
+  @include font-secondary();
+}
+
+.main-nav a{
+  color: $color-text--dark;
+  text-decoration: none;
+  position: relative;
+  @include transition(color 0.3s ease-in-out);
+  &:hover{
+    color: $color-accent--light;
+  }
+}
+
+.main-nav__slash{
+  background-color: red;
+  @include size(1px null);
+  position: relative;
+  @include transform (rotate(15deg));
+}

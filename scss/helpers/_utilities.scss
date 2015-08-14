@@ -23,6 +23,11 @@
   font-style: italic;
 }
 
+@mixin font-secondary(){
+  font-family: $font-family--secondary;
+  letter-spacing: em(4px);
+}
+
 
 //BACKGROUND IMAGE MIXIN
 
