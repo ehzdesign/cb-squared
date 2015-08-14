@@ -1,20 +1,49 @@
-#footer{
+
+
+.footer{
+	padding:2%;
 	@include clearfix;
 	background-color: $color-footer;
-	color:white;
+	color:$color-text--light;
+
+	.fa{
+		font-size:2em;
+		margin-right:6px;
+		color:darken($color-text--light, 40%);
+
+		&:hover{
+			
+		}
+		
+	}
 
 
 	.footer__contact-info{
 		clear:left;
+		margin-top: 6%;
+		margin-bottom:4%;
 	}
 }
 
-#footer__hours-operaton{
+
+
+
+
+.footer__hours-operaton{
 
 	float:right;
-	margin-right:10%;
-	
+	margin-top:-13%;
+
 	td{
-		padding:10px;
+		padding:4px;
+	}
+}
+
+
+
+
+.social-media{
+	ul li{
+		display: inline-block;
 	}
 }
