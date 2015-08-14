@@ -1,0 +1,20 @@
+#footer{
+	@include clearfix;
+	background-color: $color-footer;
+	color:white;
+
+
+	.footer__contact-info{
+		clear:left;
+	}
+}
+
+#footer__hours-operaton{
+
+	float:right;
+	margin-right:10%;
+	
+	td{
+		padding:10px;
+	}
+}

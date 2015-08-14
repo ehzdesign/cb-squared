@@ -32,6 +32,9 @@ body:before {
 img {
   max-width: 100%; }
 
+ul {
+  list-style-type: none; }
+
 /*header styles*/
 .header {
   max-width: 100vw;
@@ -57,5 +60,21 @@ img {
   width: 23.23176%; }
   .main-logo:last-child {
     margin-right: 0; }
+
+#footer {
+  background-color: #343838;
+  color: white; }
+  #footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #footer .footer__contact-info {
+    clear: left; }
+
+#footer__hours-operaton {
+  float: right;
+  margin-right: 10%; }
+  #footer__hours-operaton td {
+    padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */
