@@ -60,7 +60,6 @@ html {
   .main-logo:last-child {
     margin-right: 0; }
 
-<<<<<<< HEAD
 .footer {
   padding: 2%;
   background-color: #343838;
@@ -86,7 +85,7 @@ html {
 
 .social-media ul li {
   display: inline-block; }
-=======
+
 nav {
   float: left;
   display: block;
@@ -150,6 +149,5 @@ nav {
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg);
   transform: rotate(15deg); }
->>>>>>> master
 
 /*# sourceMappingURL=main.css.map */
