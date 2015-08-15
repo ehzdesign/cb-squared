@@ -16,14 +16,14 @@
 // MIXINS
 // =============================================
 
-//FONT MIXIN
+//FONT PLACEHOLDERS
 
-@mixin italic(){
+%italic(){
   font-weight: $font-weight--normal;
   font-style: italic;
 }
 
-@mixin font-secondary(){
+%font-secondary(){
   font-family: $font-family--secondary;
   letter-spacing: em(4px);
 }
