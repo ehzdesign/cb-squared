@@ -3,9 +3,10 @@
 .header{
   @include outer-container(100vw);
   @include display(flex);
+  // @include justify-content(space-between);
   @include pad(em(20px));
 }
 
 .main-logo{
-  @include span-columns(4);
+  @include span-columns(4 of 12);
  }

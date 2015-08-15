@@ -1,17 +1,15 @@
 nav{
-  @include fill-parent();
+  @include span-columns(7 of 12);
   @include display(flex);
   @include align-items(center);
-
-  // @include span-columns(9);
+  margin-left: auto;
 }
 
 .main-nav{
-  @include fill-parent;
-  @include shift(2);
+  @include fill-parent();
   @include display(flex);
   @include justify-content(space-around);
-  @include font-secondary();
+  @extend %font-secondary;
 }
 
 .main-nav a{
