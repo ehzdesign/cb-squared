@@ -1,1 +1,19 @@
-_hero-video.scss
+
+.hero-video{
+ @include outer-container(100vw);
+ position: relative;
+ // height: 100vh;
+}
+
+
+.hero-video__video{
+  @include fill-parent();
+  height: auto;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}

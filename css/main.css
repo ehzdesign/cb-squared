@@ -56,7 +56,7 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 23.23176%; }
   .main-logo:last-child {
     margin-right: 0; }
 
@@ -149,5 +149,25 @@ nav {
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg);
   transform: rotate(15deg); }
+
+.hero-video {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .hero-video::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.hero-video__video {
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=main.css.map */
