@@ -1,7 +1,7 @@
 
 
 .footer{
-	padding:2%;
+	@include pad(em(20px));
 	@include clearfix;
 	background-color: $color-footer;
 	color:$color-text--light;
