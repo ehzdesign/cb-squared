@@ -12,11 +12,8 @@
 
 
 
-// =============================================
-// MIXINS
-// =============================================
 
-//FONT PLACEHOLDERS
+// PLACEHOLDERS
 
 %italic{
   font-weight: $font-weight--normal;
@@ -28,6 +25,20 @@
   letter-spacing: em(4px);
 }
 
+%center-text{
+  text-align:center;
+}
+
+
+//TRANSITION PLACEHOLDER
+%transition--default{
+  transition: all .3s ease-out;
+}
+
+
+// =============================================
+// MIXINS
+// =============================================
 
 //BACKGROUND IMAGE MIXIN
 
@@ -37,4 +48,12 @@
   width: $w;
   height: $h;
   display: $disp;
+};
+
+//OVERLAY MIXIN
+
+@mixin overlay($color, $alpha){
+  position: absolute;
+  @include size(100%);
+  background: rgba($color, $alpha);
 };
