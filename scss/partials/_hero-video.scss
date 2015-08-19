@@ -2,6 +2,9 @@
 .hero-video{
  @include outer-container(100%);
  position: relative;
+  .overlay{
+    border-bottom: em(5px) solid $color-accent--dark;
+  }
  // height: 100vh;
 }
 
@@ -11,9 +14,7 @@
 }
 
 .overlay{
-  position: absolute;
-  @include size(100%);
-  background: rgba(0, 0, 0, 0.8);
+  @include overlay($color-bg--dark,0.8);
 }
 
 .hero-logo{
