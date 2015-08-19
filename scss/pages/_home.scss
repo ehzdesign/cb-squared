@@ -77,6 +77,21 @@
   color: rgba($color-text--light,0);
   transform:translateY(em(-20px));
   @extend %transition--default;
+  &::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: (12px 0 12px 15px);
+    border-color: transparent;
+    position: absolute;
+    top: -0.15em;
+    @extend %transition--default;
+    .services a:hover &{
+      border-color: transparent transparent transparent #b72f33;
+    }
+
+  }
   .services a:hover &{
     color: $color-text--light;
     transform:translateY(em(0px));

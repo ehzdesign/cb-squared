@@ -17,7 +17,7 @@ h2, .main-nav, .services__more-info-link {
 .services-text {
   text-align: center; }
 
-.services-text__container, .overlay--services, .services__more-info-link {
+.services-text__container, .overlay--services, .services__more-info-link, .services__more-info-link::after {
   transition: all .3s ease-out; }
 
 img {
@@ -332,6 +332,17 @@ nav {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0);
   transform: translateY(-1.25em); }
+  .services__more-info-link::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 15px;
+    border-color: transparent;
+    position: absolute;
+    top: -0.15em; }
+    .services a:hover .services__more-info-link::after {
+      border-color: transparent transparent transparent #b72f33; }
   .services a:hover .services__more-info-link {
     color: #ffffff;
     transform: translateY(0em); }
