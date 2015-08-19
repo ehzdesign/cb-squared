@@ -5,36 +5,24 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.17215%, transparent 6.17215%, transparent 8.5298%, #eee 8.5298%, #eee 14.70196%, transparent 14.70196%, transparent 17.05961%, #eee 17.05961%, #eee 23.23176%, transparent 23.23176%, transparent 25.58941%, #eee 25.58941%, #eee 31.76157%, transparent 31.76157%, transparent 34.11922%, #eee 34.11922%, #eee 40.29137%, transparent 40.29137%, transparent 42.64902%, #eee 42.64902%, #eee 48.82117%, transparent 48.82117%, transparent 51.17883%, #eee 51.17883%, #eee 57.35098%, transparent 57.35098%, transparent 59.70863%, #eee 59.70863%, #eee 65.88078%, transparent 65.88078%, transparent 68.23843%, #eee 68.23843%, #eee 74.41059%, transparent 74.41059%, transparent 76.76824%, #eee 76.76824%, #eee 82.94039%, transparent 82.94039%, transparent 85.29804%, #eee 85.29804%, #eee 91.4702%, transparent 91.4702%, transparent 93.82785%, #eee 93.82785%, #eee 100.0%, transparent 100.0%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 68em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-
 @font-face {
   font-family: "ostrich-sans--regular";
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
-.main-nav {
+h2, .main-nav, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
 
+.services-text {
+  text-align: center; }
+
+.services-text__container, .overlay--services, .services__more-info-link {
+  transition: all .3s ease-out; }
+
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
 
 ul {
   list-style-type: none;
@@ -50,8 +38,21 @@ ul {
     content: "";
     display: table; }
 
+a {
+  color: #565656;
+  text-decoration: none; }
+
 html {
-  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #565656;
+  letter-spacing: 0.125em; }
+
+h2 {
+  font-size: 1.5em; }
+
+p, td {
+  font-size: 0.6875em;
+  line-height: 20px; }
 
 /*header styles*/
 .header {
@@ -178,16 +179,18 @@ nav {
     clear: both;
     content: "";
     display: table; }
+  .hero-video .overlay, .hero-video .overlay--services {
+    border-bottom: 0.3125em solid #B72F34; }
 
 .hero-video__video {
   width: 100%;
   height: auto; }
 
-.overlay {
+.overlay, .overlay--services {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(28, 28, 28, 0.8); }
 
 .hero-logo {
   position: absolute;
@@ -217,5 +220,120 @@ nav {
   -ms-flex-align: center; }
   .hero-logo:last-child {
     margin-right: 0; }
+
+.services {
+  margin: 1% auto; }
+
+.services__container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.services__image {
+  width: 50%;
+  position: relative; }
+
+.services-text__container {
+  width: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .services a:hover .services-text__container {
+    background-color: #B72F34;
+    color: #ffffff; }
+
+.services-text {
+  width: 80%;
+  border: 1px solid #ed1c24;
+  padding: 7%; }
+  .services a:hover .services-text {
+    border-color: #ffffff; }
+
+.services-text__title::after {
+  content: '';
+  width: 6em;
+  background-color: #565656;
+  height: 1px;
+  display: block;
+  margin: 2% auto 0; }
+  .services a:hover .services-text__title::after {
+    background-color: #ffffff; }
+
+.services a:nth-child(2) .services-text__container {
+  order: -1; }
+
+.overlay--services {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  .services a:hover .overlay--services {
+    background-color: rgba(28, 28, 28, 0.6); }
+
+.services__more-info-link {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0);
+  transform: translateY(-1.25em); }
+  .services a:hover .services__more-info-link {
+    color: #ffffff;
+    transform: translateY(0em); }
 
 /*# sourceMappingURL=main.css.map */
