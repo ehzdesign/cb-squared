@@ -14,35 +14,36 @@
 			display:none;
 		}
 	}
+}
 
 .footer__contact{
 	width: 30%;
 	flex-direction: column;
 }
 
-	.fa{
-		font-size:2em;
-		margin-right:6px;
-		color:darken($color-text--light, 40%);
+.fa{
+	font-size:2em;
+	margin-right:6px;
+	color:darken($color-text--light, 40%);
 
-		&:hover{
-			
-		}
+	&:hover{
 		
 	}
-
-	.footer__contact-info{
-		margin-top: 6%;
-		margin-bottom:4%;
-	}
+	
 }
 
-.footer__hours-operaton{
+.footer__contact-info{
+	margin-top: 6%;
+	margin-bottom:4%;
+}
 
+
+.footer__hours-operaton{
 	td{
 		padding:4px;
 	}
 }
+
 
 .social-media{
 	@include display(flex);
