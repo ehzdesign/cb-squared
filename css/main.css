@@ -60,7 +60,6 @@ html {
   .main-logo:last-child {
     margin-right: 0; }
 
-<<<<<<< HEAD
 .footer {
   padding: 2%;
   background-color: #343838;
@@ -69,24 +68,65 @@ html {
     clear: both;
     content: "";
     display: table; }
+  .footer .main-logo {
+    float: none;
+    width: 100%; }
+  .footer .wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
+    .footer .wrapper::after {
+      display: none; }
+  .footer .footer__contact {
+    width: 30%;
+    flex-direction: column; }
   .footer .fa {
     font-size: 2em;
     margin-right: 6px;
     color: #999999; }
   .footer .footer__contact-info {
-    clear: left;
     margin-top: 6%;
     margin-bottom: 4%; }
 
-.footer__hours-operaton {
-  float: right;
-  margin-top: -13%; }
-  .footer__hours-operaton td {
-    padding: 4px; }
+.footer__hours-operaton td {
+  padding: 4px; }
 
-.social-media ul li {
-  display: inline-block; }
-=======
+.social-media {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  width: 70%; }
+
+.hours-table {
+  border-collapse: initial;
+  border-spacing: 30px 0; }
+
 nav {
   float: left;
   display: block;
@@ -150,6 +190,5 @@ nav {
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg);
   transform: rotate(15deg); }
->>>>>>> master
 
 /*# sourceMappingURL=main.css.map */

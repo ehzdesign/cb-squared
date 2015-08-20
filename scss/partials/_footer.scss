@@ -1,10 +1,24 @@
-
-
 .footer{
 	padding:2%;
 	@include clearfix;
 	background-color: $color-footer;
 	color:$color-text--light;
+	.main-logo{
+		float: none;
+		width:100%;
+	}
+	& .wrapper{
+		@include display(flex);
+		@include justify-content(space-between);
+		&::after{
+			display:none;
+		}
+	}
+
+.footer__contact{
+	width: 30%;
+	flex-direction: column;
+}
 
 	.fa{
 		font-size:2em;
@@ -17,33 +31,26 @@
 		
 	}
 
-
 	.footer__contact-info{
-		clear:left;
 		margin-top: 6%;
 		margin-bottom:4%;
 	}
 }
 
-
-
-
-
 .footer__hours-operaton{
-
-	float:right;
-	margin-top:-13%;
 
 	td{
 		padding:4px;
 	}
 }
 
-
-
-
 .social-media{
-	ul li{
-		display: inline-block;
-	}
+	@include display(flex);
+	@include justify-content(space-between);
+  width: 70%;
+}
+
+.hours-table{
+	border-collapse: initial;
+	border-spacing: 30px 0;
 }
