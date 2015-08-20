@@ -25,9 +25,10 @@
 	font-size:2em;
 	margin-right:6px;
 	color:darken($color-text--light, 40%);
+	@include transition(.2s);
 
 	&:hover{
-		
+		color:tint($color-text--light, 10%);
 	}
 	
 }
@@ -54,4 +55,10 @@
 .hours-table{
 	border-collapse: initial;
 	border-spacing: 30px 0;
-}
+		tr:first-of-type{
+			text-transform:uppercase;
+			font-size: em(20px);
+			font-weight:bold;
+		}
+	}
+	
