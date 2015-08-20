@@ -113,7 +113,8 @@ p, td {
 
 .footer__contact {
   width: 30%;
-  flex-direction: column; }
+  flex-direction: column;
+  align-self: center; }
 
 .fa {
   font-size: 2em;
