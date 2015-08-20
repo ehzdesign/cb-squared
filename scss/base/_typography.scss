@@ -1,3 +1,15 @@
 html{
   font-family: $font-family--primary;
+  color: $color-text--dark;
+  letter-spacing: em(2px);
+}
+
+h2{
+  @extend %font-secondary;
+  font-size: em(24px);
+}
+
+p, td{
+  font-size:em(11px);
+  line-height: 20px;
 }

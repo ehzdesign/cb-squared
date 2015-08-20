@@ -1,0 +1,29 @@
+
+.hero-video{
+ @include outer-container(100%);
+ position: relative;
+  .overlay{
+    border-bottom: em(5px) solid $color-accent--dark;
+  }
+ // height: 100vh;
+}
+
+.hero-video__video{
+  @include fill-parent();
+  height: auto;
+}
+
+.overlay{
+  @include overlay($color-bg--dark,0.8);
+}
+
+.hero-logo{
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  @include span-columns(8 of 12);
+  @include shift(2);
+  @include omega();
+  @include display(flex);
+  @include align-items(center);
+}

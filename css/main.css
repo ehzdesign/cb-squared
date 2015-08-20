@@ -10,12 +10,19 @@ html {
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
-.main-nav {
+h2, .main-nav, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
 
+.services-text {
+  text-align: center; }
+
+.services-text__container, .overlay--services, .services__more-info-link, .services__more-info-link::after {
+  transition: all .3s ease-out; }
+
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
 
 ul {
   list-style-type: none;
@@ -31,8 +38,21 @@ ul {
     content: "";
     display: table; }
 
+a {
+  color: #565656;
+  text-decoration: none; }
+
 html {
-  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #565656;
+  letter-spacing: 0.125em; }
+
+h2 {
+  font-size: 1.5em; }
+
+p, td {
+  font-size: 0.6875em;
+  line-height: 20px; }
 
 /*header styles*/
 .header {
@@ -56,12 +76,12 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 23.23176%; }
   .main-logo:last-child {
     margin-right: 0; }
 
 .footer {
-  padding: 2%;
+  padding: 1.25em;
   background-color: #343838;
   color: #ffffff; }
   .footer::after {
@@ -127,6 +147,12 @@ html {
   border-collapse: initial;
   border-spacing: 30px 0; }
 
+<<<<<<< HEAD
+=======
+.social-media ul li {
+  display: inline-block; }
+
+>>>>>>> master
 nav {
   float: left;
   display: block;
@@ -190,5 +216,185 @@ nav {
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg);
   transform: rotate(15deg); }
+<<<<<<< HEAD
+=======
+
+.hero-video {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .hero-video::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .hero-video .overlay, .hero-video .overlay--services {
+    border-bottom: 0.3125em solid #B72F34; }
+
+.hero-video__video {
+  width: 100%;
+  height: auto; }
+
+.overlay, .overlay--services {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(28, 28, 28, 0.8); }
+
+.hero-logo {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  .hero-logo:last-child {
+    margin-right: 0; }
+
+.services {
+  margin: 1% auto; }
+
+.services__container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.services__image {
+  width: 50%;
+  position: relative; }
+
+.services-text__container {
+  width: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .services a:hover .services-text__container {
+    background-color: #B72F34;
+    color: #ffffff; }
+
+.services-text {
+  width: 80%;
+  border: 1px solid #ed1c24;
+  padding: 7%; }
+  .services a:hover .services-text {
+    border-color: #ffffff; }
+
+.services-text__title::after {
+  content: '';
+  width: 6em;
+  background-color: #565656;
+  height: 1px;
+  display: block;
+  margin: 2% auto 0; }
+  .services a:hover .services-text__title::after {
+    background-color: #ffffff; }
+
+.services a:nth-child(2) .services-text__container {
+  order: -1; }
+
+.overlay--services {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  .services a:hover .overlay--services {
+    background-color: rgba(28, 28, 28, 0.6); }
+
+.services__more-info-link {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0);
+  transform: translateY(-1.25em); }
+  .services__more-info-link::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 15px;
+    border-color: transparent;
+    position: absolute;
+    top: -0.15em; }
+    .services a:hover .services__more-info-link::after {
+      border-color: transparent transparent transparent #b72f33; }
+  .services a:hover .services__more-info-link {
+    color: #ffffff;
+    transform: translateY(0em); }
+>>>>>>> master
 
 /*# sourceMappingURL=main.css.map */
