@@ -164,57 +164,84 @@ p, td {
     font-weight: bold; }
 
 a {
-  color: #ed1c24;
   text-decoration: none; }
 
-.team-hero-img {
-  overflow: hidden;
-  padding: 0; }
-  .team-hero-img .team-hero-img__picture {
-    float: left; }
+.fa-play {
+  color: #B72F34;
+  font-size: 0.8em; }
 
 .team-blog {
+  display: flex;
   background-color: #1c1c1c;
-  color: #ffffff;
-  display: inline-block; }
+  color: #ffffff; }
   .team-blog .team-blog__article {
-    padding: 2% 10%;
-    line-height: 200%;
-    font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    text-transform: uppercase; }
+    line-height: 300%; }
 
 .team-roster__title {
-  margin: 15% 0 15% 0; }
-  .team-roster__title h2 {
-    text-align: center;
-    font-weight: 700; }
-
-.title-underline {
-  height: 3px;
-  width: 4.5%;
   margin: 0 auto;
-  background-color: #ed1c24; }
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 5%;
+  font-weight: "http://fonts.googleapis.com/css?family=Karla:400,700,400italic";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  .team-roster__title .title-underline {
+    height: 2px;
+    background-color: #ed1c24; }
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10%; }
 
 .team-roster__profile {
-  width: 40%;
-  display: inline-block;
-  margin-bottom: 2%;
-  margin-left: 5%; }
-  .team-roster__profile .profile-info {
-    width: 70%;
-    float: right;
-    padding: 1%; }
+  display: flex;
+  width: 38%;
+  margin-top: 10%;
+  font-size: 0.5em; }
 
 .profile-unerline {
-  width: 100%;
-  height: 2px;
-  float: right;
+  height: 1px;
   background-color: #ecedee; }
 
+.profile-name {
+  font-size: 2.2em; }
+
+.profile-job {
+  font-size: 1.4em; }
+
 .profile-img {
-  width: 150px;
-  height: 200px;
-  float: left; }
+  margin-top: 10%;
+  margin-right: 2%;
+  width: 600px;
+  height: 150px;
+  background-size: cover;
+  background-position: center; }
+
+.chad-img {
+  background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg"); }
+
+.camille-img {
+  background-image: url("../images/members-profile-pics/Camille-Bartley.jpg"); }
+
+.tashana-img {
+  background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg"); }
+
+.manpreet-img {
+  background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg"); }
+
+.travis-img {
+  background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg"); }
+
+.derek-img {
+  background-image: url("../images/members-profile-pics/Derek.jpg"); }
+
+.kimberlee-img {
+  background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg"); }
+
+.harpreet-img {
+  background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
 
 nav {
   float: left;
@@ -458,57 +485,84 @@ nav {
     transform: translateY(0em); }
 
 a {
-  color: #ed1c24;
   text-decoration: none; }
 
-.team-hero-img {
-  overflow: hidden;
-  padding: 0; }
-  .team-hero-img .team-hero-img__picture {
-    float: left; }
+.fa-play {
+  color: #B72F34;
+  font-size: 0.8em; }
 
 .team-blog {
+  display: flex;
   background-color: #1c1c1c;
-  color: #ffffff;
-  display: inline-block; }
+  color: #ffffff; }
   .team-blog .team-blog__article {
-    padding: 2% 10%;
-    line-height: 200%;
-    font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    text-transform: uppercase; }
+    line-height: 300%; }
 
 .team-roster__title {
-  margin: 15% 0 15% 0; }
-  .team-roster__title h2 {
-    text-align: center;
-    font-weight: 700; }
-
-.title-underline {
-  height: 3px;
-  width: 4.5%;
   margin: 0 auto;
-  background-color: #ed1c24; }
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 5%;
+  font-weight: "http://fonts.googleapis.com/css?family=Karla:400,700,400italic";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  .team-roster__title .title-underline {
+    height: 2px;
+    background-color: #ed1c24; }
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10%; }
 
 .team-roster__profile {
-  width: 40%;
-  display: inline-block;
-  margin-bottom: 2%;
-  margin-left: 5%; }
-  .team-roster__profile .profile-info {
-    width: 70%;
-    float: right;
-    padding: 1%; }
+  display: flex;
+  width: 38%;
+  margin-top: 10%;
+  font-size: 0.5em; }
 
 .profile-unerline {
-  width: 100%;
-  height: 2px;
-  float: right;
+  height: 1px;
   background-color: #ecedee; }
 
+.profile-name {
+  font-size: 2.2em; }
+
+.profile-job {
+  font-size: 1.4em; }
+
 .profile-img {
-  width: 150px;
-  height: 200px;
-  float: left; }
+  margin-top: 10%;
+  margin-right: 2%;
+  width: 600px;
+  height: 150px;
+  background-size: cover;
+  background-position: center; }
+
+.chad-img {
+  background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg"); }
+
+.camille-img {
+  background-image: url("../images/members-profile-pics/Camille-Bartley.jpg"); }
+
+.tashana-img {
+  background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg"); }
+
+.manpreet-img {
+  background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg"); }
+
+.travis-img {
+  background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg"); }
+
+.derek-img {
+  background-image: url("../images/members-profile-pics/Derek.jpg"); }
+
+.kimberlee-img {
+  background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg"); }
+
+.harpreet-img {
+  background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
 
 nav {
   float: left;
