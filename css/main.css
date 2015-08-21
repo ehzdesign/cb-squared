@@ -210,6 +210,58 @@ p, td {
     font-size: 1.25em;
     font-weight: bold; }
 
+a {
+  text-decoration: none; }
+
+.team-hero-img {
+  overflow: hidden;
+  padding: 0; }
+  .team-hero-img .team-hero-img__picture {
+    float: left; }
+
+.team-blog {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: inline-block; }
+  .team-blog .team-blog__article {
+    padding: 2% 10%;
+    line-height: 200%;
+    font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    text-transform: uppercase; }
+
+.team-roster__title {
+  margin: 15% 0 15% 0; }
+  .team-roster__title h2 {
+    text-align: center;
+    font-weight: 700; }
+
+.title-underline {
+  height: 3px;
+  width: 4.5%;
+  margin: 0 auto;
+  background-color: #ed1c24; }
+
+.team-roster__profile {
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-left: 5%; }
+  .team-roster__profile .profile-info {
+    width: 70%;
+    float: right;
+    padding: 1%; }
+
+.profile-unerline {
+  width: 100%;
+  height: 2px;
+  float: right;
+  background-color: #ecedee; }
+
+.profile-img {
+  width: 150px;
+  height: 200px;
+  float: left; }
+
 nav {
   float: left;
   display: block;
