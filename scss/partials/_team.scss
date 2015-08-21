@@ -1,0 +1,79 @@
+a{
+
+	text-decoration:none;
+}
+
+
+
+
+.team-hero-img{
+	overflow:hidden;
+	padding:0;
+
+		.team-hero-img__picture{
+			float:left;
+		}
+}
+
+.team-blog{
+	background-color:$color-bg--dark;
+	color:$color-text--light;
+	display:inline-block;
+
+	.team-blog__article{
+		padding:2% 10%;
+		line-height: 200%;
+		font-family:$font-family--primary ;
+		text-transform: uppercase;
+	}
+
+}
+
+
+.team-roster__title{
+	margin:15% 0 15% 0;
+
+	h2{
+		text-align:center;
+		font-weight: $font-weight--bold;
+	}
+}
+
+
+.title-underline{
+		height:3px;
+		width:4.5%;
+		margin:0 auto;
+		background-color:$brightred;
+	}
+
+.team-roster__profile{
+	width:40%;
+	//border:1px dotted green;
+	display:inline-block;
+	margin-bottom:2%;
+	margin-left:5%;
+	//overflow:hidden;
+
+
+	.profile-info{
+		width:70%;
+		float:right;
+		padding:1%;
+	}
+}
+
+.profile-unerline{
+	width:100%;
+	height:2px;
+	float:right;
+	background-color:$porcelain;
+}
+
+
+.profile-img{
+	width:150px;
+	height:200px;
+	//border:1px dotted red;
+	float:left;
+}
