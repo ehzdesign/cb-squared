@@ -10,11 +10,11 @@ html {
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
-h2, .main-nav, .services__more-info-link {
+h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
 
-.services-text {
+.services-banner__sidebar__list, .services-text {
   text-align: center; }
 
 .services-text__container, .overlay--services, .services__more-info-link, .services__more-info-link::after {
@@ -274,6 +274,60 @@ nav {
   -ms-flex-align: center; }
   .hero-logo:last-child {
     margin-right: 0; }
+
+.services-banner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.services-banner__sidebar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-content: space-between;
+  -moz-align-content: space-between;
+  align-content: space-between;
+  -ms-flex-line-pack: justify;
+  background-color: #B72F34;
+  background: url("../images/bg-tile.png");
+  padding: 6%; }
+
+.services-banner__sidebar__list {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 40%; }
+  .services-banner__sidebar__list * {
+    margin-bottom: 20%; }
+    .services-banner__sidebar__list *:last-child {
+      margin-bottom: 0; }
 
 .services {
   margin: 1% auto; }
