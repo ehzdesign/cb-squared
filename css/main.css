@@ -1,48 +1,458 @@
-/*
-Error: Invalid CSS after "...als/navigation"": expected "{", was ";"
-        on line 16 of scss/main.scss
+@import url("http://fonts.googleapis.com/css?family=Karla:400,700,400italic");
+html {
+  box-sizing: border-box; }
 
-11: @import "base/typography";
-12: 
-13: @import "partials/header";
-14: @import "partials/footer";
-15: <<<<<<< HEAD
-16: @import "partials/navigation";
-17: @import "partials/hero-video";
-18: 
-19: @import "pages/home";
-20: =======
-21: @import "partials/team";
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-Backtrace:
-scss/main.scss:16
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1096:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:641:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:635:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:660:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin.rb:108:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...als/navigation\"\": expected \"{\", was \";\"\A         on line 16 of scss/main.scss\A \A 11: @import \"base/typography\";\A 12: \A 13: @import \"partials/header\";\A 14: @import \"partials/footer\";\A 15: <<<<<<< HEAD\A 16: @import \"partials/navigation\";\A 17: @import \"partials/hero-video\";\A 18: \A 19: @import \"pages/home\";\A 20: =======\A 21: @import \"partials/team\";"; }
+@font-face {
+  font-family: "ostrich-sans--regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
+.brightred {
+  color: #ed1c24; }
+
+h2, .main-nav, .services__more-info-link {
+  font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+  letter-spacing: 0.25em; }
+
+.services-text {
+  text-align: center; }
+
+.services-text__container, .overlay--services, .services__more-info-link {
+  transition: all .3s ease-out; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+a {
+  color: #565656;
+  text-decoration: none; }
+
+html {
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #565656;
+  letter-spacing: 0.125em; }
+
+h2 {
+  font-size: 1.5em; }
+
+p, td {
+  font-size: 0.6875em;
+  line-height: 20px; }
+
+/*header styles*/
+.header {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.25em; }
+  .header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.main-logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .main-logo:last-child {
+    margin-right: 0; }
+
+.footer {
+  padding: 1.25em;
+  background-color: #343838;
+  color: #ffffff; }
+  .footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .footer .fa {
+    font-size: 2em;
+    margin-right: 6px;
+    color: #999999; }
+  .footer .footer__contact-info {
+    clear: left;
+    margin-top: 6%;
+    margin-bottom: 4%; }
+
+.footer__hours-operaton {
+  float: right;
+  margin-top: -13%; }
+  .footer__hours-operaton td {
+    padding: 4px; }
+
+.social-media ul li {
+  display: inline-block; }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-left: auto; }
+  nav:last-child {
+    margin-right: 0; }
+
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+
+.main-nav a {
+  color: #565656;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
+  .main-nav a:hover {
+    color: #ed1c24; }
+
+.main-nav__slash {
+  background-color: red;
+  width: 1px;
+  position: relative;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg); }
+
+.hero-video {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .hero-video::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .hero-video .overlay, .hero-video .overlay--services {
+    border-bottom: 0.3125em solid #B72F34; }
+
+.hero-video__video {
+  width: 100%;
+  height: auto; }
+
+.overlay, .overlay--services {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(28, 28, 28, 0.8); }
+
+.hero-logo {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  .hero-logo:last-child {
+    margin-right: 0; }
+
+.services {
+  margin: 1% auto; }
+
+.services__container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.services__image {
+  width: 50%;
+  position: relative; }
+
+.services-text__container {
+  width: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .services a:hover .services-text__container {
+    background-color: #B72F34;
+    color: #ffffff; }
+
+.services-text {
+  width: 80%;
+  border: 1px solid #ed1c24;
+  padding: 7%; }
+  .services a:hover .services-text {
+    border-color: #ffffff; }
+
+.services-text__title::after {
+  content: '';
+  width: 6em;
+  background-color: #565656;
+  height: 1px;
+  display: block;
+  margin: 2% auto 0; }
+  .services a:hover .services-text__title::after {
+    background-color: #ffffff; }
+
+.services a:nth-child(2) .services-text__container {
+  order: -1; }
+
+.overlay--services {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+  .services a:hover .overlay--services {
+    background-color: rgba(28, 28, 28, 0.6); }
+
+.services__more-info-link {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0);
+  transform: translateY(-1.25em); }
+  .services a:hover .services__more-info-link {
+    color: #ffffff;
+    transform: translateY(0em); }
+
+a {
+  text-decoration: none; }
+
+.team-hero-img {
+  overflow: hidden;
+  padding: 0; }
+  .team-hero-img .team-hero-img__picture {
+    float: left; }
+
+.team-blog {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: inline-block; }
+  .team-blog .team-blog__article {
+    padding: 2% 10%;
+    line-height: 200%;
+    font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    text-transform: uppercase; }
+
+.team-roster__title {
+  margin: 15% 0 15% 0; }
+  .team-roster__title h2 {
+    text-align: center;
+    font-weight: 700; }
+
+.title-underline {
+  height: 3px;
+  width: 4.5%;
+  margin: 0 auto;
+  background-color: #ed1c24; }
+
+.team-roster__profile {
+  width: 40%;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-left: 5%; }
+  .team-roster__profile .profile-info {
+    width: 70%;
+    float: right;
+    padding: 1%; }
+
+.profile-unerline {
+  width: 100%;
+  height: 2px;
+  float: right;
+  background-color: #ecedee; }
+
+.profile-img {
+  width: 150px;
+  height: 200px;
+  float: left; }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-left: auto; }
+  nav:last-child {
+    margin-right: 0; }
+
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+
+.main-nav a {
+  color: #565656;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
+  .main-nav a:hover {
+    color: #ed1c24; }
+
+.main-nav__slash {
+  background-color: red;
+  width: 1px;
+  position: relative;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg); }
+
+/*# sourceMappingURL=main.css.map */
