@@ -1,49 +1,65 @@
-
-
 .footer{
 	@include pad(em(20px));
 	@include clearfix;
 	background-color: $color-footer;
 	color:$color-text--light;
-
-	.fa{
-		font-size:2em;
-		margin-right:6px;
-		color:darken($color-text--light, 40%);
-
-		&:hover{
-			
-		}
-		
+	.main-logo{
+		float: none;
+		width:100%;
 	}
-
-
-	.footer__contact-info{
-		clear:left;
-		margin-top: 6%;
-		margin-bottom:4%;
+	& .wrapper{
+		@include display(flex);
+		@include justify-content(space-between);
+		&::after{
+			display:none;
+		}
 	}
 }
 
+.footer__contact{
+	width: 30%;
+	flex-direction: column;
+	align-self:center;
+}
 
+.fa{
+	font-size:2em;
+	margin-right:6px;
+	color:darken($color-text--light, 40%);
+	@include transition(.2s);
 
+	&:hover{
+		color:tint($color-text--light, 10%);
+	}
+	
+}
+
+.footer__contact-info{
+	margin-top: 6%;
+	margin-bottom:4%;
+}
 
 
 .footer__hours-operaton{
-
-	float:right;
-	margin-top:-13%;
-
 	td{
 		padding:4px;
 	}
 }
 
 
-
-
 .social-media{
-	ul li{
-		display: inline-block;
-	}
+	@include display(flex);
+	@include justify-content(space-between);
+  width: 70%;
 }
+
+.hours-table{
+	border-collapse: initial;
+	border-spacing: 30px 0;
+		tr:first-of-type{
+			text-transform:uppercase;
+			font-size: em(20px);
+			font-weight:bold;
+		}
+	}
+	
