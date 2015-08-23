@@ -10,15 +10,30 @@ html {
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
-h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
+h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
 
-.services-banner__sidebar__list, .services-text {
+.services-banner__sidebar__list, .services-text, .services-list, .services-list__table, .packages-section {
   text-align: center; }
+
+.services-list, .package__title {
+  text-transform: uppercase; }
 
 .services-text__container, .overlay--services, .services__more-info-link, .services__more-info-link::after {
   transition: all .3s ease-out; }
+
+.packages-section {
+  background-color: #1c1c1c; }
+
+.services-heading__title::after,
+.services-list__title::after {
+  content: '';
+  height: 0.125rem;
+  width: 20%;
+  background-color: #ed1c24;
+  display: block;
+  margin: 1% auto; }
 
 img {
   max-width: 100%;
@@ -38,14 +53,17 @@ ul {
     content: "";
     display: table; }
 
-a {
-  color: #565656;
-  text-decoration: none; }
-
 html {
   font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #565656;
   letter-spacing: 0.125em; }
+
+a {
+  color: #565656;
+  text-decoration: none; }
+
+h1 {
+  font-size: 2.25em; }
 
 h2 {
   font-size: 1.5em; }
@@ -329,6 +347,34 @@ nav {
     .services-banner__sidebar__list *:last-child {
       margin-bottom: 0; }
 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
 .services {
   margin: 1% auto; }
 
@@ -454,5 +500,83 @@ nav {
   .services a:hover .services__more-info-link {
     color: #ffffff;
     transform: translateY(0em); }
+
+.services-heading__text-container {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 100px 300px 100px 50px;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
+
+.services-heading__title,
+.services-list__title {
+  display: inline-block; }
+
+.services-list {
+  margin: 10% auto; }
+  .services-list__title {
+    margin-top: 0;
+    margin-bottom: 10%; }
+
+.services-list__table {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+
+.services-list__item:not(:last-child) {
+  margin-bottom: 1.25em;
+  border-bottom: 1px dotted #cfcfcf;
+  padding-bottom: 1.25em; }
+
+.packages {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 3% 0; }
+
+.packages__package {
+  border: 1px solid #5e5f5f;
+  padding: 3%; }
+
+.package__title {
+  color: #B72F34;
+  padding: 0 2%; }
+
+.package__description {
+  color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

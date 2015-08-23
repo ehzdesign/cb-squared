@@ -10,10 +10,9 @@
 
 
 
-
-
-
 // PLACEHOLDERS
+
+//TYPOGRAPHY PLACEHOLDER
 
 %italic{
   font-weight: $font-weight--normal;
@@ -29,12 +28,32 @@
   text-align:center;
 }
 
+%uppercase{
+  text-transform: uppercase;
+}
+
 
 //TRANSITION PLACEHOLDER
 %transition--default{
   transition: all .3s ease-out;
 }
 
+// BACKGROUND PLACEHOLDER
+
+%color-bg--dark{
+  background-color:$color-bg--dark;
+}
+
+//UNDERLINE ACCENT
+
+%underline--accent{
+  content:'';
+  height: rem(2px);
+  width:20%;
+  background-color: $color-accent--light;
+  display: block;
+  margin: 1% auto;
+}
 
 // =============================================
 // MIXINS
@@ -43,7 +62,7 @@
 //BACKGROUND IMAGE MIXIN
 
 @mixin img-replace($img, $w, $h, $disp: block){
-  background-image: url("#{path--rel}/#{$img}");
+  background-image: url("#{$path--rel}/#{$img}");
   background-repeat: no-repeat;
   width: $w;
   height: $h;
