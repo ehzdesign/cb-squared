@@ -59,8 +59,9 @@
 .package__title{
   color: $color-accent--dark;
   @extend %uppercase;
-  padding: 0 2%;
+
 }
+
 .package__description{
   color: $color-text--light;
 }
