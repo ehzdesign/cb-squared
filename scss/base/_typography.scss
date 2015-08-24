@@ -4,6 +4,16 @@ html{
   letter-spacing: em(2px);
 }
 
+a{
+  color:$color-text--dark;
+  text-decoration: none;
+}
+
+h1{
+  @extend %font-secondary;
+  font-size: em(36px);
+}
+
 h2{
   @extend %font-secondary;
   font-size: em(24px);
