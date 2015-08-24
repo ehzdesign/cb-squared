@@ -1,0 +1,139 @@
+a{
+
+	text-decoration:none;
+}
+
+.fa-play{
+	color:$darkred;
+	font-size:0.8em;
+}
+
+
+
+.team-hero-img__container{
+
+}
+
+.team-blog{
+	display:flex;
+	background-color:$color-bg--dark;
+	color:$color-text--light;
+
+	.team-blog__article{
+		line-height:300%;
+	}
+}
+
+
+
+
+
+// title and underline edits--starts//
+
+.team-roster__title{
+	margin: 0 auto;
+	margin-top:10%;
+	margin-bottom:10%;
+    width:5%;
+    font-weight:$font-url--google ;
+    font-family:$font-family--primary ;
+
+	.title-underline{
+		 height:2px;
+		 background-color:$brightred;
+	}
+}
+// title and underline--ends//
+
+
+/// profile section--starts//
+
+.team-roster{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+
+
+.team-roster__profile{
+	display:flex;
+	width:38%;
+	margin-top:10%;
+	font-size:0.5em;
+}
+
+.profile-unerline{
+		height:1px;
+		background-color:$porcelain;
+	}
+
+
+.profile-blog{
+	font-size:1.2em;
+}
+
+.profile-name{
+	font-size:2.2em;
+}
+
+.profile-job{
+	font-size:1.4em;
+}
+
+.profile-img{
+	margin-top:10%;
+	margin-right:2%;
+	width:600px;
+	height:150px;
+	background-size:cover;
+	background-position: center;
+	
+}
+
+.chad-img{
+	background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg");
+}
+
+.camille-img{
+		background-image: url("../images/members-profile-pics/Camille-Bartley.jpg");
+
+}
+
+.tashana-img{
+		background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg");
+
+}
+
+.manpreet-img{
+		background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg");
+
+}
+
+.travis-img{
+		background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg");
+
+}
+
+.derek-img{
+		background-image: url("../images/members-profile-pics/Derek.jpg");
+
+}
+
+.kimberlee-img{
+		background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg");
+
+}
+
+.harpreet-img{
+		background-image: url("../images/members-profile-pics/harpreet-small.jpg");
+
+}
+
+
+
+
+
+
