@@ -1,0 +1,67 @@
+.services-heading__text-container{
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+    background-size: contain;
+    background-position: 100%;
+    padding: 100px 300px 100px 50px;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+  
+}
+
+.services-heading__title, 
+.services-list__title{
+  display: inline-block;
+  &::after{
+  @extend %underline--accent;
+
+  }
+}
+
+.services-list{
+   @extend %center-text;
+   @extend %uppercase;
+   margin: 10% auto;
+   &__title{
+    margin-top: 0;
+    margin-bottom: 10%;
+   }
+}
+
+.services-list__table{
+  @include display(flex);
+  @include justify-content(space-around);
+  @extend %center-text;
+}
+
+.services-list__item:not(:last-child){
+  margin-bottom:em(20px);
+  border-bottom:1px dotted tint($color-border, 70%);
+  padding-bottom:em(20px);
+}
+
+.packages-section{
+  @extend %color-bg--dark;
+  @extend %center-text;
+}
+
+.packages{
+  @include display(flex);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+  @include padding(3% 0);
+}
+
+.packages__package{
+  border: 1px solid $color-border;
+  @include padding(3%);
+}
+
+.package__title{
+  color: $color-accent--dark;
+  @extend %uppercase;
+
+}
+
+.package__description{
+  color: $color-text--light;
+}
