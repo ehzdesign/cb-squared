@@ -28,3 +28,7 @@ nav{
   position: relative;
   @include transform (rotate(15deg));
 }
+
+.current-link{
+  color: $color-accent--light;
+}
