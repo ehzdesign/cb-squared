@@ -1,0 +1,68 @@
+.services-banner{
+  @include display(flex);
+}
+
+.services-banner__sidebar{
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-content(space-between);
+  background-color: $color-accent--dark;
+  background: url("../images/bg-tile.png");
+  @include pad(6%);
+}
+
+.services-banner__sidebar__list{
+  @extend %font-secondary;
+  @extend %center-text;
+  color: $color-text--light;
+  font-size: em(24px);
+  font-weight: bold;
+  margin-top: 40%;
+  *{
+    margin-bottom: 20%;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
