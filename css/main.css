@@ -216,7 +216,8 @@ a {
 .team-roster__profile {
   display: flex;
   width: 38%;
-  margin-top: 10%; }
+  margin-top: 10%;
+  font-size: 0.5em; }
 
 .profile-unerline {
   height: 1px;
@@ -698,7 +699,8 @@ a {
 .team-roster__profile {
   display: flex;
   width: 38%;
-  margin-top: 10%; }
+  margin-top: 10%;
+  font-size: 0.5em; }
 
 .profile-unerline {
   height: 1px;
@@ -744,6 +746,40 @@ a {
 
 .harpreet-img {
   background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
+
+.google-map {
+  width: auto;
+  height: 500px;
+  display: flex; }
+
+.contact-note {
+  width: auto;
+  background-color: #000000;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  align-items: center;
+  flex-direction: column; }
+
+.contact-note__p1 {
+  margin-top: 5%;
+  font-size: 2em;
+  letter-spacing: 0.2em; }
+
+.contact-note__p2 {
+  font-size: 1.5em;
+  font-style: italic;
+  letter-spacing: 0.3em; }
+
+.contact-note__title {
+  font-size: 3.5em;
+  margin-top: 5%;
+  margin-bottom: 0.5%; }
+
+.contact-note__underline {
+  background-color: #ed1c24;
+  height: 2px;
+  width: 175px; }
 
 nav {
   float: left;
