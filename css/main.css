@@ -809,4 +809,227 @@ nav {
 .package__description {
   color: #ffffff; }
 
+.services-heading__text-container {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 100px 300px 100px 50px;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
+
+.services-heading__title,
+.services-list__title {
+  display: inline-block; }
+
+.services-list {
+  margin: 10% auto; }
+  .services-list__title {
+    margin-top: 0;
+    margin-bottom: 10%; }
+
+.services-list__table {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+
+.services-list__item:not(:last-child) {
+  margin-bottom: 1.25em;
+  border-bottom: 1px dotted #cecfcf;
+  padding-bottom: 1.25em; }
+
+.packages {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 3% 0; }
+
+.packages__package {
+  border: 1px solid #5e5f5f;
+  padding: 3%; }
+
+.package__title {
+  color: #B72F34; }
+
+.package__description {
+  color: #ffffff; }
+
+a {
+  text-decoration: none; }
+
+.fa-play {
+  color: #B72F34;
+  font-size: 0.8em; }
+
+.team-blog {
+  display: flex;
+  background-color: #1c1c1c;
+  color: #ffffff; }
+  .team-blog .team-blog__article {
+    line-height: 300%; }
+
+.team-roster__title {
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 5%;
+  font-weight: "http://fonts.googleapis.com/css?family=Karla:400,700,400italic";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  .team-roster__title .title-underline {
+    height: 2px;
+    background-color: #ed1c24; }
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10%; }
+
+.team-roster__profile {
+  display: flex;
+  width: 38%;
+  margin-top: 10%; }
+
+.profile-unerline {
+  height: 1px;
+  background-color: #5e5f5f; }
+
+.profile-blog {
+  font-size: 1.2em; }
+
+.profile-name {
+  font-size: 2.2em; }
+
+.profile-job {
+  font-size: 1.4em; }
+
+.profile-img {
+  margin-top: 10%;
+  margin-right: 2%;
+  width: 600px;
+  height: 150px;
+  background-size: cover;
+  background-position: center; }
+
+.chad-img {
+  background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg"); }
+
+.camille-img {
+  background-image: url("../images/members-profile-pics/Camille-Bartley.jpg"); }
+
+.tashana-img {
+  background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg"); }
+
+.manpreet-img {
+  background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg"); }
+
+.travis-img {
+  background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg"); }
+
+.derek-img {
+  background-image: url("../images/members-profile-pics/Derek.jpg"); }
+
+.kimberlee-img {
+  background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg"); }
+
+.harpreet-img {
+  background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-left: auto; }
+  nav:last-child {
+    margin-right: 0; }
+
+.main-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+
+.main-nav a {
+  color: #565656;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
+  .main-nav a:hover {
+    color: #ed1c24; }
+
+.main-nav__slash {
+  background-color: red;
+  width: 1px;
+  position: relative;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg); }
+
 /*# sourceMappingURL=main.css.map */
