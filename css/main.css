@@ -33,7 +33,7 @@ h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   width: 20%;
   background-color: #ed1c24;
   display: block;
-  margin: 1% auto; }
+  margin: .5em auto 0; }
 
 img {
   max-width: 100%;
@@ -305,6 +305,9 @@ nav {
   display: -ms-flexbox;
   display: flex; }
 
+.banner-image__container {
+  flex-grow: 1; }
+
 .services-banner__sidebar {
   display: -webkit-box;
   display: -moz-box;
@@ -336,9 +339,20 @@ nav {
   -moz-align-content: space-between;
   align-content: space-between;
   -ms-flex-line-pack: justify;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
   background-color: #B72F34;
   background: url("../images/bg-tile.png");
   padding: 6%; }
+  .services-banner__sidebar img {
+    width: 12.5em; }
 
 .services-banner__sidebar__list {
   color: #ffffff;
@@ -350,33 +364,17 @@ nav {
     .services-banner__sidebar__list *:last-child {
       margin-bottom: 0; }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+.services-heading__text-container {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 50px 40% 100px 5%;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp; }
+.services-heading__title,
+.services-list__title {
+  display: inline-block; }
 
 .services {
   margin: 1% auto; }
@@ -504,18 +502,6 @@ nav {
     color: #ffffff;
     transform: translateY(0em); }
 
-.services-heading__text-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
-  background-size: contain;
-  background-position: 100%;
-  padding: 50px 40% 100px 5%;
-  background-repeat: no-repeat;
-  margin-top: 5%; }
-
-.services-heading__title,
-.services-list__title {
-  display: inline-block; }
-
 .services-list {
   margin: 10% auto; }
   .services-list__title {
@@ -544,6 +530,9 @@ nav {
   margin-bottom: 1.25em;
   border-bottom: 1px dotted #cfcfcf;
   padding-bottom: 1.25em; }
+
+.packages-section {
+  background: url("../images/packages--bg-2.png"); }
 
 .packages {
   display: -webkit-box;
@@ -580,6 +569,12 @@ nav {
 
 .package__description {
   color: #ffffff; }
+
+.services-heading--womens {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/womens-hair.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 120%; }
 
 .services-column__list {
   margin: 1.875em auto;
@@ -639,5 +634,13 @@ nav {
     height: 20px;
     width: auto;
     display: inline-block; }
+
+.services-heading--esthetics {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/face.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 50px 40% 100px 5%;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
 
 /*# sourceMappingURL=main.css.map */
