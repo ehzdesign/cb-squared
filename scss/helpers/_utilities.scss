@@ -52,22 +52,13 @@
   width:20%;
   background-color: $color-accent--light;
   display: block;
-  margin: 1% auto;
+  margin: .5em auto 0;
 }
 
 // =============================================
 // MIXINS
 // =============================================
 
-//BACKGROUND IMAGE MIXIN
-
-@mixin img-replace($img, $w, $h, $disp: block){
-  background-image: url("#{$path--rel}/#{$img}");
-  background-repeat: no-repeat;
-  width: $w;
-  height: $h;
-  display: $disp;
-};
 
 //OVERLAY MIXIN
 
