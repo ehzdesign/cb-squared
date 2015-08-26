@@ -1,22 +1,3 @@
-.services-heading__text-container{
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
-    background-size: contain;
-    background-position: 100%;
-    padding: 50px 40% 100px 5%;
-    background-repeat: no-repeat;
-    margin-top: 5%;
-  
-}
-
-.services-heading__title, 
-.services-list__title{
-  display: inline-block;
-  &::after{
-  @extend %underline--accent;
-
-  }
-}
-
 .services-list{
    @extend %center-text;
    @extend %uppercase;
@@ -42,6 +23,7 @@
 .packages-section{
   @extend %color-bg--dark;
   @extend %center-text;
+  background: url('../images/packages--bg-2.png');
 }
 
 .packages{
@@ -54,6 +36,7 @@
 .packages__package{
   border: 1px solid $color-border;
   @include padding(3%);
+  // @extend %color-bg--dark;
 }
 
 .package__title{

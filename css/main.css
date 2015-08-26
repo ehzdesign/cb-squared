@@ -36,7 +36,7 @@ h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   width: 20%;
   background-color: #ed1c24;
   display: block;
-  margin: 1% auto; }
+  margin: .5em auto 0; }
 
 img {
   max-width: 100%;
@@ -391,6 +391,9 @@ nav {
   display: -ms-flexbox;
   display: flex; }
 
+.banner-image__container {
+  flex-grow: 1; }
+
 .services-banner__sidebar {
   display: -webkit-box;
   display: -moz-box;
@@ -422,9 +425,20 @@ nav {
   -moz-align-content: space-between;
   align-content: space-between;
   -ms-flex-line-pack: justify;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
   background-color: #B72F34;
   background: url("../images/bg-tile.png");
   padding: 6%; }
+  .services-banner__sidebar img {
+    width: 12.5em; }
 
 .services-banner__sidebar__list {
   color: #ffffff;
@@ -436,33 +450,17 @@ nav {
     .services-banner__sidebar__list *:last-child {
       margin-bottom: 0; }
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+.services-heading__text-container {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 50px 40% 100px 5%;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp; }
+.services-heading__title,
+.services-list__title {
+  display: inline-block; }
 
 .services {
   margin: 1% auto; }
@@ -740,18 +738,6 @@ nav {
 .current-link {
   color: #ed1c24; }
 
-.services-heading__text-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
-  background-size: contain;
-  background-position: 100%;
-  padding: 50px 40% 100px 5%;
-  background-repeat: no-repeat;
-  margin-top: 5%; }
-
-.services-heading__title,
-.services-list__title {
-  display: inline-block; }
-
 .services-list {
   margin: 10% auto; }
   .services-list__title {
@@ -780,6 +766,9 @@ nav {
   margin-bottom: 1.25em;
   border-bottom: 1px dotted #cecfcf;
   padding-bottom: 1.25em; }
+
+.packages-section {
+  background: url("../images/packages--bg-2.png"); }
 
 .packages {
   display: -webkit-box;
@@ -817,18 +806,6 @@ nav {
 .package__description {
   color: #ffffff; }
 
-.services-heading__text-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
-  background-size: contain;
-  background-position: 100%;
-  padding: 50px 40% 100px 5%;
-  background-repeat: no-repeat;
-  margin-top: 5%; }
-
-.services-heading__title,
-.services-list__title {
-  display: inline-block; }
-
 .services-list {
   margin: 10% auto; }
   .services-list__title {
@@ -857,6 +834,9 @@ nav {
   margin-bottom: 1.25em;
   border-bottom: 1px dotted #cecfcf;
   padding-bottom: 1.25em; }
+
+.packages-section {
+  background: url("../images/packages--bg-2.png"); }
 
 .packages {
   display: -webkit-box;
@@ -1044,6 +1024,12 @@ nav {
 .current-link {
   color: #ed1c24; }
 
+.services-heading--womens {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/womens-hair.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 120%; }
+
 .services-column__list {
   margin: 1.875em auto;
   width: 80%; }
@@ -1212,71 +1198,12 @@ nav {
   .submitBtn:hover {
     border: 1px solid #ffffff; }
 
-nav {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  margin-left: auto; }
-  nav:last-child {
-    margin-right: 0; }
-
-.main-nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: distribute;
-  -moz-box-pack: distribute;
-  box-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: distribute; }
-
-.main-nav a {
-  color: #565656;
-  text-decoration: none;
-  position: relative;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out; }
-  .main-nav a:hover {
-    color: #ed1c24; }
-
-.main-nav__slash {
-  background-color: red;
-  width: 1px;
-  position: relative;
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  transform: rotate(15deg); }
-
-.current-link {
-  color: #ed1c24; }
+.services-heading--esthetics {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/face.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 50px 40% 100px 5%;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
 
 /*# sourceMappingURL=main.css.map */
