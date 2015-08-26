@@ -10,6 +10,9 @@ html {
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
+.brightred {
+  color: #ed1c24; }
+
 h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
@@ -642,5 +645,198 @@ nav {
   padding: 50px 40% 100px 5%;
   background-repeat: no-repeat;
   margin-top: 5%; }
+
+a {
+  text-decoration: none; }
+
+.fa-play {
+  color: #B72F34;
+  font-size: 0.8em; }
+
+.team-blog {
+  display: flex;
+  background-color: #1c1c1c;
+  color: #ffffff; }
+  .team-blog .team-blog__article {
+    line-height: 300%; }
+
+.team-roster__title {
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 5%;
+  font-weight: "http://fonts.googleapis.com/css?family=Karla:400,700,400italic";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  .team-roster__title .title-underline {
+    height: 2px;
+    background-color: #ed1c24; }
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10%; }
+
+.team-roster__profile {
+  display: flex;
+  width: 38%;
+  margin-top: 10%;
+  font-size: 0.5em; }
+
+.profile-unerline {
+  height: 1px;
+  background-color: #5e5f5f; }
+
+.profile-blog {
+  font-size: 1.2em; }
+
+.profile-name {
+  font-size: 2.2em; }
+
+.profile-job {
+  font-size: 1.4em; }
+
+.profile-img {
+  margin-top: 10%;
+  margin-right: 2%;
+  width: 600px;
+  height: 150px;
+  background-size: cover;
+  background-position: center; }
+
+.chad-img {
+  background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg"); }
+
+.camille-img {
+  background-image: url("../images/members-profile-pics/Camille-Bartley.jpg"); }
+
+.tashana-img {
+  background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg"); }
+
+.manpreet-img {
+  background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg"); }
+
+.travis-img {
+  background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg"); }
+
+.derek-img {
+  background-image: url("../images/members-profile-pics/Derek.jpg"); }
+
+.kimberlee-img {
+  background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg"); }
+
+.harpreet-img {
+  background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
+
+.google-map {
+  width: auto;
+  height: 500px;
+  display: flex; }
+
+.contact-note {
+  width: auto;
+  background-color: #000000;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  align-items: center;
+  flex-direction: column; }
+
+.contact-note__p1 {
+  margin-top: 5%;
+  font-size: 2em;
+  letter-spacing: 0.2em; }
+
+.contact-note__p2 {
+  font-size: 1.5em;
+  font-style: italic;
+  letter-spacing: 0.3em;
+  margin-bottom: 5%; }
+
+.contact-note__title {
+  font-size: 3.5em;
+  margin-top: 5%;
+  margin-bottom: 0.5%; }
+
+.contact-note__underline {
+  background-color: #ed1c24;
+  height: 2px;
+  width: 175px; }
+
+.contact-red-section {
+  background-color: #ed2129; }
+
+.contact-red-section-wrap {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff; }
+
+.svg-box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20%; }
+
+.icon-box {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1%;
+  margin-top: 4%;
+  font-size: 1.1em; }
+
+.icon-box > p {
+  line-height: 0px; }
+
+.bold-title {
+  font-weight: 700;
+  margin-top: 6%;
+  font-size: 0.8em; }
+
+.phone-icon {
+  margin-bottom: 33%; }
+
+.contact-form-wrap {
+  display: flex;
+  background-color: #292929; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 10%; }
+  .contact-form input {
+    margin: 3% 0;
+    background-color: transparent;
+    border: 1px solid #5e5f5f;
+    height: 30px;
+    padding: 3%; }
+
+.formLbl {
+  margin-bottom: 5%; }
+
+.msgBox {
+  height: 16em;
+  background-color: transparent;
+  padding-left: 3%;
+  padding-top: 2%;
+  border: 1px solid #5e5f5f; }
+
+.submitBtn {
+  width: 8em;
+  height: 2em;
+  margin-top: 5%;
+  background-color: transparent;
+  border: 1px solid #5e5f5f; }
+  .submitBtn:hover {
+    border: 1px solid #ffffff; }
 
 /*# sourceMappingURL=main.css.map */
