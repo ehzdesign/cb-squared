@@ -33,77 +33,102 @@
   </header>
   <!-- END OF HEADER -->
 
-  <!-- google maps api -->
+  <!-- GOOGLE MAPS SECTION-->
   <div id="map-canvas" class="google-map"></div>
-  <!-- google maps api ended -->
+  <!-- END OF GOOGLE MAPS SECTION -->
 
 
-  <!-- contact black section -->
-  <div class="contact-note">
-    <h2 class="contact-note__title">CONTACT</h2>
-    <div class="contact-note__underline"></div>
-    <p class="contact-note__p1">QUESTIONS <b>OR</b> COMMENTS?</p>
-    <p class="contact-note__p2">GET IN TOUCH</p>
-  </div>
-  <!-- contact black section end-->
+  <!-- CONTACT HEADING SECTION -->
+  <section class="contact-heading">
+   <div class="wrapper"> 
+    <div class="contact-heading__title">
+      <h1>CONTACT</h1>
+      <p>QUESTIONS <b>OR</b> COMMENTS?</p>
+      <p>GET IN TOUCH</p></div>
+   </div>
+  </section>
+  <!-- END OF CONTACT HEADING SECTION-->
   
-
-  <div class="contact-red-section">
-  <div class="wrapper contact-red-section-wrap">
-      <!--in person icon box-->
-      <div class="icon-box">
-        <div class="social-icon svg-box"><img src="images/contact-icons/svg/location-w.svg" alt=""></div>
-        <p class="bold-title">IN PERSON</p>
-        <p>48 MAIN ST N, BRAMPTON, ON</p>
-        <p>L6V 1N6</p>
-      </div>
-
-      <!--phone icon box-->
-      <div class="icon-box">
-        <div class="phone-icon svg-box"><img src="images/contact-icons/svg/cellphone-w.svg" alt=""></div>
-        <p class="bold-title">PHONE</p>
-        <p>(905) 783-4242</p>
-      </div>
-
-      <!--email icon box-->
-      <div class="icon-box">
-        <div class="social-icon svg-box">
-          <img src="images/contact-icons/svg/envelope-w.svg" alt="">
+  <!-- CONTACT INFO SECTION -->
+  <section class="contact-info">
+  <div class="wrapper">
+     <div class="contact-info-container"> 
+     <!--in person icon box-->
+       <div class="contact-info__detail">
+         <div class="contact-info__detail__icon">
+           <img src="images/contact-icons/svg/location-w.svg" alt="">
+         </div>
+         <div class="contact-info__detail__text">
+           <p>IN PERSON</p>
+           <p>48 MAIN ST N, BRAMPTON, ON</p>
+           <p>L6V 1N6</p>
+         </div>
+       </div>
+       <div class="contact-info__divider"></div>
+       <!--phone icon box-->
+       <div class="contact-info__detail">
+         <div class="contact-info__detail__icon">
+           <img src="images/contact-icons/svg/cellphone-w.svg" alt="">
+         </div>
+         <div class="contact-info__detail__text">
+          <p>PHONE</p>
+          <p>(905) 783-4242</p>
         </div>
-        <p class="bold-title">EMAIL</p>
-        <p>INFO@CBSQUARED.COM</p>
-      </div>
+       </div>
+       <div class="contact-info__divider"></div>
 
-      <!--social icon box-->
-      <div class="icon-box">
-        <div class="social-icon svg-box">
-          <img src="images/contact-icons/svg/comment-w.svg" alt="">
+       <!--email icon box-->
+       <div class="contact-info__detail">
+         <div class="contact-info__detail__icon">
+           <img src="images/contact-icons/svg/envelope-w.svg" alt="">
+         </div>
+        <div class="contact-info__detail__text"> 
+         <p>EMAIL</p>
+         <p>INFO@CBSQUARED.COM</p>
         </div>
-        <p class="bold-title">SOCIAL</p>
-        <p>FACEBOOK: CB2 HAIR STUDIO</p>
-        <p>INSTAGRAM: @CB2 HAIRSTUDIO</p>
-        <p>TWITTER: @CB2HAIRSTUDIO</p>
+       </div>
+       <div class="contact-info__divider"></div>
+
+       <!--social icon box-->
+       <div class="contact-info__detail">
+         <div class="contact-info__detail__icon">
+           <img src="images/contact-icons/svg/comment-w.svg" alt="">
+         </div>
+         <div class="contact-info__detail__text">
+          <p>SOCIAL</p>
+          <p>FACEBOOK: CB2 HAIR STUDIO</p>
+          <p>INSTAGRAM: @CB2 HAIRSTUDIO</p>
+          <p>TWITTER: @CB2HAIRSTUDIO</p>
+        </div>
+       </div>
       </div>
     </div>
+  </section>
 
     <!--
   <div>Icons made by <a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>, <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/linh-pham" title="Linh Pham">Linh Pham</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
   -->
+  <!-- END CONTACT INFO SECTION -->
 
-  </div>
 
+  <!-- CONTACT FORM SECTION -->
 
-  <div class="contact-form-wrap">
-    <form class="contact-form  wrapper" action="info.html" method="post">
-      <label class="formLbl" for="">SEND US A MESSAGE</label>
-      <input type="text" name="name" placeholder="NAME">
-      <input type="email" name="EMAIL" placeholder="EMAIL">
-      <input type="text" name="subject" placeholder="subject">
-      <textarea class="msgBox" name="msg" placeholder="Message"></textarea>
-      <button class="submitBtn" type="submit">SUBMIT</button>
-    </form>
-  </div>
+  <section class="contact-form">
+    <div class="wrapper">
+    <h3>Send us a message</h3>
+     <div class="contact-form__form-container"> 
+       <form class="contact-form__form" action="info.html" method="post">
+         <input type="text" name="name" placeholder="NAME">
+         <input type="email" name="email" placeholder="EMAIL">
+         <input type="text" name="subject" placeholder="SUBJECT">
+         <textarea name="msg" placeholder="MESSAGE"></textarea>
+         <button class="submitBtn" type="submit">SUBMIT</button>
+       </form>
+      </div>
+    </div>
+  </section>
 
+  <!-- END OF CONTACT FORM SECTION -->
 
 
   <!-- FOOTER SECTION -->
