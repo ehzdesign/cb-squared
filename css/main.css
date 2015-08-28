@@ -10,33 +10,33 @@ html {
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/ostrich-sans/ostrich-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-sans/ostrich-regular.woff2") format("woff2"), url("../fonts/ostrich-sans/ostrich-regular.woff") format("woff"), url("../fonts/ostrich-sans/ostrich-regular.ttf") format("truetype"), url("../fonts/ostrich-sans/ostrich-regular.svg#ostrich-sans--regular") format("svg"); }
-.brightred {
-  color: #ed1c24; }
-
 h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
 
-.services-banner__sidebar__list, .services-text, .services-list, .services-list__table, .packages-section, .services-column__list {
+.services-banner__sidebar__list, .services-text, .services-list, .services-list__table, .packages-section, .services-column__list, .contact-heading__title, .contact-info__detail {
   text-align: center; }
 
-.services-list, .package__title, .services-column__list, .bridal-offer {
+.services-list, .package__title, .services-column__list, .bridal-offer, .contact-form h3 {
   text-transform: uppercase; }
 
-.services-text__container, .overlay--services, .services__more-info-link, .services__more-info-link::after {
+.services-text__container, .overlay--services, .services__more-info-link, .services__more-info-link::after, .submitBtn {
   transition: all .3s ease-out; }
 
-.packages-section {
+.packages-section, .contact-heading, .contact-form {
   background-color: #1c1c1c; }
 
 .services-heading__title::after,
-.services-list__title::after {
+.services-list__title::after, .contact-heading__title h1::after {
   content: '';
   height: 0.125rem;
-  width: 20%;
+  width: 40%;
   background-color: #ed1c24;
   display: block;
   margin: .5em auto 0; }
+
+.contact-form__form input, .contact-form__form textarea, .contact-form__form button {
+  background-color: transparent; }
 
 img {
   max-width: 100%;
@@ -180,89 +180,6 @@ p, td {
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: bold; }
-
-a {
-  text-decoration: none; }
-
-.fa-play {
-  color: #B72F34;
-  font-size: 0.8em; }
-
-.team-blog {
-  display: flex;
-  background-color: #1c1c1c;
-  color: #ffffff; }
-  .team-blog .team-blog__article {
-    line-height: 300%; }
-
-.team-roster__title {
-  margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 5%;
-  font-weight: "http://fonts.googleapis.com/css?family=Karla:400,700,400italic";
-  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-  .team-roster__title .title-underline {
-    height: 2px;
-    background-color: #ed1c24; }
-
-.team-roster {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 10%; }
-
-.team-roster__profile {
-  display: flex;
-  width: 38%;
-  margin-top: 10%;
-  font-size: 0.5em; }
-
-.profile-unerline {
-  height: 1px;
-  background-color: #5e5f5f; }
-
-.profile-blog {
-  font-size: 1.2em; }
-
-.profile-name {
-  font-size: 2.2em; }
-
-.profile-job {
-  font-size: 1.4em; }
-
-.profile-img {
-  margin-top: 10%;
-  margin-right: 2%;
-  width: 600px;
-  height: 150px;
-  background-size: cover;
-  background-position: center; }
-
-.chad-img {
-  background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg"); }
-
-.camille-img {
-  background-image: url("../images/members-profile-pics/Camille-Bartley.jpg"); }
-
-.tashana-img {
-  background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg"); }
-
-.manpreet-img {
-  background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg"); }
-
-.travis-img {
-  background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg"); }
-
-.derek-img {
-  background-image: url("../images/members-profile-pics/Derek.jpg"); }
-
-.kimberlee-img {
-  background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg"); }
-
-.harpreet-img {
-  background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
 
 nav {
   float: left;
@@ -1024,6 +941,308 @@ nav {
 .current-link {
   color: #ed1c24; }
 
+.services-list {
+  margin: 10% auto; }
+  .services-list__title {
+    margin-top: 0;
+    margin-bottom: 10%; }
+
+.services-list__table {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute; }
+
+.services-list__item:not(:last-child) {
+  margin-bottom: 1.25em;
+  border-bottom: 1px dotted #cecfcf;
+  padding-bottom: 1.25em; }
+
+.packages-section {
+  background: url("../images/packages--bg-2.png"); }
+
+.packages {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 3% 0; }
+
+.packages__package {
+  border: 1px solid #5e5f5f;
+  padding: 3%; }
+
+.package__title {
+  color: #B72F34; }
+
+.package__description {
+  color: #ffffff; }
+
+.services-heading--womens {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/womens-hair.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 120%; }
+
+.services-column__list {
+  margin: 1.875em auto;
+  width: 80%; }
+
+.services-column__list__group {
+  border: 1px solid #cecfcf;
+  margin-bottom: 1.875em;
+  padding: 1.875em 13%; }
+
+.services-column__list__group__title {
+  color: #B72F34;
+  margin: 0;
+  margin-bottom: 1.875em; }
+
+.services-column__list__group__items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .services-column__list__group__items li {
+    margin-right: 2%;
+    margin-bottom: 1em;
+    font-size: 0.6875em; }
+    .services-column__list__group__items li:not(:last-child)::after {
+      content: '/';
+      color: #cecfcf;
+      position: relative;
+      margin: 0 0.625em; }
+
+.bridal-offer {
+  text-align: center;
+  color: #B72F34;
+  margin: 3.125em 0; }
+  .bridal-offer p {
+    font-size: 0.875em; }
+  .bridal-offer img {
+    height: 20px;
+    width: auto;
+    display: inline-block; }
+
+.services-heading--esthetics {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/face.jpg");
+  background-size: contain;
+  background-position: 100%;
+  padding: 50px 40% 100px 5%;
+  background-repeat: no-repeat;
+  margin-top: 5%; }
+
+a {
+  text-decoration: none; }
+
+.fa-play {
+  color: #B72F34;
+  font-size: 0.8em; }
+
+.team-blog {
+  display: flex;
+  background-color: #1c1c1c;
+  color: #ffffff; }
+  .team-blog .team-blog__article {
+    line-height: 300%; }
+
+.team-roster__title {
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 5%;
+  font-weight: "http://fonts.googleapis.com/css?family=Karla:400,700,400italic";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  .team-roster__title .title-underline {
+    height: 2px;
+    background-color: #ed1c24; }
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10%; }
+
+.team-roster__profile {
+  display: flex;
+  width: 38%;
+  margin-top: 10%;
+  font-size: 0.5em; }
+
+.profile-unerline {
+  height: 1px;
+  background-color: #5e5f5f; }
+
+.profile-blog {
+  font-size: 1.2em; }
+
+.profile-name {
+  font-size: 2.2em; }
+
+.profile-job {
+  font-size: 1.4em; }
+
+.profile-img {
+  margin-top: 10%;
+  margin-right: 2%;
+  width: 600px;
+  height: 150px;
+  background-size: cover;
+  background-position: center; }
+
+.chad-img {
+  background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg"); }
+
+.camille-img {
+  background-image: url("../images/members-profile-pics/Camille-Bartley.jpg"); }
+
+.tashana-img {
+  background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg"); }
+
+.manpreet-img {
+  background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg"); }
+
+.travis-img {
+  background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg"); }
+
+.derek-img {
+  background-image: url("../images/members-profile-pics/Derek.jpg"); }
+
+.kimberlee-img {
+  background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg"); }
+
+.harpreet-img {
+  background-image: url("../images/members-profile-pics/harpreet-small.jpg"); }
+
+.google-map {
+  width: auto;
+  height: 500px;
+  display: flex; }
+
+.contact-heading__title {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.125em; }
+  .contact-heading__title p {
+    font-size: 1.25em;
+    letter-spacing: 0.3em; }
+
+.contact-info {
+  background-color: #B72F34; }
+
+.contact-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #ffffff;
+  padding: 3% 0; }
+
+.contact-info__detail__icon {
+  width: 3.125em;
+  height: auto;
+  margin: 0 auto; }
+
+.contact-info__detail__text {
+  margin-top: 2.5em; }
+  .contact-info__detail__text p {
+    line-height: initial; }
+  .contact-info__detail__text p:first-of-type {
+    font-weight: 700;
+    font-size: 0.875em; }
+
+.contact-info__divider {
+  width: 1px;
+  background-color: rgba(45, 45, 45, 0.48);
+  height: 8.75em;
+  align-self: center; }
+
+.contact-form {
+  color: #ffffff;
+  padding: 10% 0; }
+  .contact-form h3 {
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+    margin: 0; }
+
+.contact-form__form-container {
+  margin-top: 5em; }
+
+.contact-form__form {
+  text-align: center;
+  color: #cccccc;
+  margin: 0 auto;
+  width: 70%; }
+  .contact-form__form input, .contact-form__form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.625em; }
+  .contact-form__form input {
+    margin-bottom: 1.25em; }
+  .contact-form__form input, .contact-form__form textarea, .contact-form__form button {
+    border: 1px solid #5e5f5f; }
+  .contact-form__form textarea {
+    height: 15.625em; }
+
+.submitBtn {
+  padding: 0.625em 6%;
+  margin-top: 1.25em; }
+  .submitBtn:hover {
+    border-color: #ffffff; }
+
 .services-heading--womens {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/womens-hair.jpg");
   background-size: contain;
@@ -1094,109 +1313,78 @@ nav {
   height: 500px;
   display: flex; }
 
-.contact-note {
-  width: auto;
-  background-color: #000000;
+.contact-heading__title {
   display: flex;
-  text-align: center;
   color: #ffffff;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 3.125em; }
+  .contact-heading__title p {
+    font-size: 1.25em;
+    letter-spacing: 0.3em; }
 
-.contact-note__p1 {
-  margin-top: 5%;
-  font-size: 2em;
-  letter-spacing: 0.2em; }
+.contact-info {
+  background-color: #B72F34; }
 
-.contact-note__p2 {
-  font-size: 1.5em;
-  font-style: italic;
-  letter-spacing: 0.3em;
-  margin-bottom: 5%; }
-
-.contact-note__title {
-  font-size: 3.5em;
-  margin-top: 5%;
-  margin-bottom: 0.5%; }
-
-.contact-note__underline {
-  background-color: #ed1c24;
-  height: 2px;
-  width: 175px; }
-
-.contact-red-section {
-  background-color: #ed2129; }
-
-.contact-red-section-wrap {
-  width: auto;
+.contact-info-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 3% 0; }
 
-.svg-box {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20%; }
+.contact-info__detail__icon {
+  width: 3.125em;
+  height: auto;
+  margin: 0 auto; }
 
-.icon-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1%;
-  margin-top: 4%;
-  font-size: 1.1em; }
+.contact-info__detail__text {
+  margin-top: 2.5em; }
+  .contact-info__detail__text p {
+    line-height: initial; }
+  .contact-info__detail__text p:first-of-type {
+    font-weight: 700;
+    font-size: 0.875em; }
 
-.icon-box > p {
-  line-height: 0px; }
-
-.bold-title {
-  font-weight: 700;
-  margin-top: 6%;
-  font-size: 0.8em; }
-
-.phone-icon {
-  margin-bottom: 33%; }
-
-.contact-form-wrap {
-  display: flex;
-  background-color: #292929; }
+.contact-info__divider {
+  width: 1px;
+  background-color: rgba(45, 45, 45, 0.48);
+  height: 8.75em;
+  align-self: center; }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   color: #ffffff;
-  width: 40%;
-  margin-top: 5%;
-  margin-bottom: 10%; }
-  .contact-form input {
-    margin: 3% 0;
-    background-color: transparent;
-    border: 1px solid #5e5f5f;
-    height: 30px;
-    padding: 3%; }
+  padding: 10% 0; }
+  .contact-form h3 {
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+    margin: 0; }
 
-.formLbl {
-  margin-bottom: 5%; }
+.contact-form__form-container {
+  margin-top: 5em; }
 
-.msgBox {
-  height: 16em;
-  background-color: transparent;
-  padding-left: 3%;
-  padding-top: 2%;
-  border: 1px solid #5e5f5f; }
+.contact-form__form {
+  text-align: center;
+  color: #cccccc;
+  margin: 0 auto;
+  width: 70%; }
+  .contact-form__form input, .contact-form__form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.625em; }
+  .contact-form__form input {
+    margin-bottom: 1.25em; }
+  .contact-form__form input, .contact-form__form textarea, .contact-form__form button {
+    border: 1px solid #5e5f5f; }
+  .contact-form__form textarea {
+    height: 15.625em; }
 
 .submitBtn {
-  width: 8em;
-  height: 2em;
-  margin-top: 5%;
-  background-color: transparent;
-  border: 1px solid #5e5f5f; }
+  padding: 0.625em 6%;
+  margin-top: 1.25em; }
   .submitBtn:hover {
-    border: 1px solid #ffffff; }
+    border-color: #ffffff; }
 
 .services-heading--esthetics {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/face.jpg");

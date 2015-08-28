@@ -1,4 +1,5 @@
 
+
 function initialize() {
   var mapCanvas = document.getElementById('map-canvas');
   var myLatLng = {lat: 43.6866070, lng: -79.7607210};
@@ -11,6 +12,8 @@ function initialize() {
    var marker = new google.maps.Marker({
     position: myLatLng,
     map: mapCanvas,
+    icon: 'images/map-marker-logo.png',
+    animation: google.maps.Animation.DROP,
     title: 'CB Squared Hair Studio'
   });
   var map = new google.maps.Map(mapCanvas, mapOptions);
