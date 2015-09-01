@@ -75,3 +75,16 @@
   @include size(100%);
   background: rgba($color, $alpha);
 };
+
+
+@mixin med-screen {
+  @media screen and (max-width: 800px){
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media screen and (max-width: 620px){
+    @content;
+  }
+}

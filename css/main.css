@@ -41,6 +41,12 @@ h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
 .contact-form__form input, .contact-form__form textarea, .contact-form__form button {
   background-color: transparent; }
 
+body {
+  background-color: white; }
+  @media screen and (max-width: 800px) {
+    body {
+      font-size: 14px; } }
+
 img {
   max-width: 100%;
   display: block; }
@@ -58,6 +64,11 @@ ul {
     clear: both;
     content: "";
     display: table; }
+
+@media screen and (max-width: 620px) {
+  .fixed-offset {
+    position: relative;
+    top: 4em; } }
 
 html {
   font-family: "Karla", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -80,9 +91,7 @@ p, td {
 
 /*header styles*/
 .header {
-  max-width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -90,19 +99,47 @@ p, td {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
   padding: 1.25em; }
-  .header::after {
-    clear: both;
-    content: "";
-    display: table; }
+  @media screen and (max-width: 800px) {
+    .header {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column; } }
+  @media screen and (max-width: 620px) {
+    .header {
+      position: fixed;
+      z-index: 100;
+      background-color: #ffffff; } }
 
 .main-logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .main-logo:last-child {
-    margin-right: 0; }
+  -webkit-flex-basis: 25%;
+  -moz-flex-basis: 25%;
+  flex-basis: 25%;
+  -ms-flex-preferred-size: 25%; }
+  @media screen and (max-width: 800px) {
+    .main-logo {
+      width: 40%;
+      margin-bottom: 2.1875em;
+      align-self: center; } }
+  @media screen and (max-width: 620px) {
+    .main-logo {
+      margin-bottom: initial; } }
 
 .footer {
   padding: 1.25em;
@@ -183,11 +220,7 @@ p, td {
     font-size: 1.25em;
     font-weight: bold; }
 
-nav {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%;
+.nav {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -195,6 +228,10 @@ nav {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-basis: 65%;
+  -moz-flex-basis: 65%;
+  flex-basis: 65%;
+  -ms-flex-preferred-size: 65%;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -203,13 +240,16 @@ nav {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center;
-  margin-left: auto; }
-  nav:last-child {
-    margin-right: 0; }
+  -ms-flex-align: center; }
+  @media screen and (max-width: 620px) {
+    .nav {
+      display: none; } }
 
 .main-nav {
-  width: 100%;
+  -webkit-flex-basis: 100%;
+  -moz-flex-basis: 100%;
+  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -249,6 +289,14 @@ nav {
 
 .current-link {
   color: #ed1c24; }
+
+#menu-btn {
+  display: none; }
+  @media screen and (max-width: 620px) {
+    #menu-btn {
+      display: block;
+      position: absolute;
+      font-size: 1.5625em; } }
 
 .hero-video {
   max-width: 100%;

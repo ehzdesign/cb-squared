@@ -1,12 +1,15 @@
-nav{
-  @include span-columns(7 of 12);
+.nav{
   @include display(flex);
+  @include flex-basis(65%);
   @include align-items(center);
-  margin-left: auto;
+
+    @include small-screen{
+      display: none;
+    }
 }
 
 .main-nav{
-  @include fill-parent();
+    @include flex-basis(100%);
   @include display(flex);
   @include justify-content(space-around);
   @extend %font-secondary;
@@ -31,4 +34,15 @@ nav{
 
 .current-link{
   color: $color-accent--light;
+}
+
+#menu-btn{
+  // position: absolute;
+  display: none;
+
+  @include small-screen{
+    display: block;
+    position:absolute;
+    font-size: em(25px);
+  }
 }

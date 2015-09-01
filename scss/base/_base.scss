@@ -1,3 +1,7 @@
+body{
+  background-color: white;
+}
+
 img{
   max-width: 100%;
   display:block;
@@ -13,5 +17,10 @@ ul{
 	@include outer-container();
 }
 
-
+.fixed-offset{
+  @include small-screen{
+    position: relative;
+    top: 4em;
+  }
+}
 
