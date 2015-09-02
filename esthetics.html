@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>CB Squared Hair Studio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" href="vendor/mmenu/css/jquery.mmenu.all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+  <div>
   <!-- HEADER SECTION -->
-   <header class="header">
+   <header class="header fixed">
+   <i id="menu-btn"class="fa fa-bars"></i>
+
     <div class="main-logo">
       <a href="index.html"><img src="images/main-logo.png" alt="CB Squared logo"></a>
     </div>
@@ -32,7 +37,7 @@
     </nav>
    </header>
 <!-- END OF HEADER -->
-
+<div class="fixed-offset">
 <!-- SERVICES BANNER SECTION -->
     <section class="services-banner">
      <div class="banner-image__container"> <img src="images/esthetics-banner.jpg"  alt="esthetics-services-image" alt="" class="services-banner__image"></div>
@@ -169,5 +174,24 @@
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->
+    </div>
+    </div>
+   <!-- OFF CANVAS NAV -->
+      <nav id="menu">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mens-services.html">Mens Services</a></li>
+            <li><a href="womens-services.html">Womens Services</a></li>
+            <li><a href="esthetics.html">Esthetics Services</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+  <!-- END OF OFF CANVAS NAV -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/mmenu/js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="vendor/mmenu/js/jquery.mmenu.fixedelements.min.js"></script>
+    <script type="text/javascript" src="js/mobile-nav.js"></script>
   </body>
 </html>

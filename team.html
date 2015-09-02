@@ -3,13 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
 	<title>CB Squared Hair Studio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
+  <link type="text/css" href="vendor/mmenu/css/jquery.mmenu.all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="header">
+ <div>
+	<header class="header fixed">
+  <i id="menu-btn"class="fa fa-bars"></i>
+
 		<div class="main-logo">
 			<img src="images/main-logo.png" alt="CB Squared logo">
 		</div>
@@ -31,6 +36,9 @@
 			</ul>
 		</nav>
 	</header>
+  <!-- END OF HEADER -->
+
+  <div class="fixed-offset">
 	
 	<section class="team-hero-img">
 		<div class="team-hero-img__container">
@@ -263,12 +271,27 @@
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->
-</body>
+  </div>
+  </div>
+  <!-- OFF CANVAS NAV -->
+      <nav id="menu">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mens-services.html">Mens Services</a></li>
+            <li><a href="womens-services.html">Womens Services</a></li>
+            <li><a href="esthetics.html">Esthetics Services</a></li>
+            <li><a href="team.html">Meet the Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+  <!-- END OF OFF CANVAS NAV -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/mmenu/js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="vendor/mmenu/js/jquery.mmenu.fixedelements.min.js"></script>
+    <script type="text/javascript" src="js/mobile-nav.js"></script>
+  </body>
 </html>
-
-
-
-
 
 
 
