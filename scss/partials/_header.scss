@@ -1,12 +1,32 @@
 /*header styles*/
 
 .header{
-  @include outer-container(100vw);
+  width:100%;
   @include display(flex);
-  // @include justify-content(space-between);
+  @include justify-content(space-between);
   @include pad(em(20px));
+
+    @include med-screen{
+      @include flex-direction(column);
+    }
+
+    @include small-screen{
+      position: fixed;
+      z-index: 100;
+      background-color: $color-text--light;
+    }
 }
 
 .main-logo{
-  @include span-columns(3 of 12);
+  @include flex-basis(25%);
+
+    @include med-screen{
+      width: 40%;
+      margin-bottom: em(35px);
+      align-self: center;
+    }
+
+    @include small-screen{
+      margin-bottom: initial;
+    }
  }

@@ -1,59 +1,56 @@
-a{
-
-	text-decoration:none;
-}
-
 .fa-play{
 	color:$darkred;
 	font-size:0.8em;
+	margin: 0;
+	@extend %transition--default;
+		a:hover &{
+			transform: translateX(em(5px));
+		}
 }
 
 
-
-.team-hero-img__container{
-
-}
 
 .team-blog{
-	display:flex;
 	background-color:$color-bg--dark;
 	color:$color-text--light;
+  background: url('../images/packages--bg-2.png');
+}
 
-	.team-blog__article{
-		line-height:300%;
-	}
+
+.team-blog__article{
+	line-height: 2.5;
+  padding: 40px 5%;
+  margin: 0;
+  text-transform: uppercase;
+  color: darken($color-text--light, 5%);
+}
+
+.team-roster{
+	margin: em(150px) 0;
 }
 
 
 
+// title begins//
 
-
-// title and underline edits--starts//
+.team-roster__title__container{
+	@extend %center-text;
+}
 
 .team-roster__title{
+	@extend .services-heading__title;
 	margin: 0 auto;
-	margin-top:10%;
-	margin-bottom:10%;
-    width:5%;
-    font-weight:$font-url--google ;
-    font-family:$font-family--primary ;
-
-	.title-underline{
-		 height:2px;
-		 background-color:$brightred;
-	}
 }
-// title and underline--ends//
+// title ends//
 
 
 /// profile section--starts//
 
-.team-roster{
+.team-roster__profiles{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 10%;
 }
 
 
@@ -63,11 +60,15 @@ a{
 	width:38%;
 	margin-top:10%;
 	font-size:0.5em;
+
+		a{
+			@extend %color-accent--dark;
+		}
 }
 
-.profile-unerline{
+.profile-underline{
 		height:1px;
-		background-color:$porcelain;
+		background-color:tint($color-border, 70%);
 	}
 
 
@@ -81,11 +82,12 @@ a{
 
 .profile-job{
 	font-size:1.4em;
+	@extend %color-accent--dark;
 }
 
 .profile-img{
 	margin-top:10%;
-	margin-right:2%;
+	margin-right:5%;
 	width:600px;
 	height:150px;
 	background-size:cover;
