@@ -1,7 +1,11 @@
 html{
   font-family: $font-family--primary;
   color: $color-text--dark;
-  letter-spacing: em(2px);
+  letter-spacing: em(2px); 
+
+   @include med-screen{
+    font-size: 14px;
+  }  
 }
 
 a{

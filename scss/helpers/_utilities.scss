@@ -32,6 +32,10 @@
   text-transform: uppercase;
 }
 
+%color-accent--dark{
+  color: $color-accent--dark;
+}
+
 
 //TRANSITION PLACEHOLDER
 %transition--default{
@@ -49,10 +53,14 @@
 %underline--accent{
   content:'';
   height: rem(2px);
-  width:20%;
+  width:40%;
   background-color: $color-accent--light;
   display: block;
   margin: .5em auto 0;
+}
+
+%bg--transparent{
+  background-color:transparent;
 }
 
 // =============================================
@@ -67,3 +75,16 @@
   @include size(100%);
   background: rgba($color, $alpha);
 };
+
+
+@mixin med-screen {
+  @media screen and (max-width: 800px){
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media screen and (max-width: 620px){
+    @content;
+  }
+}

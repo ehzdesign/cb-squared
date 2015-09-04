@@ -14,15 +14,7 @@
 			display:none;
 		}
 	}
-}
-
-.footer__contact{
-	width: 30%;
-	flex-direction: column;
-	align-self:center;
-}
-
-.fa{
+	.fa{
 	font-size:2em;
 	margin-right:6px;
 	color:darken($color-text--light, 40%);
@@ -31,8 +23,16 @@
 	&:hover{
 		color:tint($color-text--light, 10%);
 	}
-	
 }
+
+}
+
+.footer__contact{
+	width: 30%;
+	flex-direction: column;
+	align-self:center;
+}
+
 
 .footer__contact-info{
 	margin-top: 6%;

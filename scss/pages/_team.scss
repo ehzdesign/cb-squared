@@ -1,0 +1,141 @@
+.fa-play{
+	color:$darkred;
+	font-size:0.8em;
+	margin: 0;
+	@extend %transition--default;
+		a:hover &{
+			transform: translateX(em(5px));
+		}
+}
+
+
+
+.team-blog{
+	background-color:$color-bg--dark;
+	color:$color-text--light;
+  background: url('../images/packages--bg-2.png');
+}
+
+
+.team-blog__article{
+	line-height: 2.5;
+  padding: 40px 5%;
+  margin: 0;
+  text-transform: uppercase;
+  color: darken($color-text--light, 5%);
+}
+
+.team-roster{
+	margin: em(150px) 0;
+}
+
+
+
+// title begins//
+
+.team-roster__title__container{
+	@extend %center-text;
+}
+
+.team-roster__title{
+	@extend .services-heading__title;
+	margin: 0 auto;
+}
+// title ends//
+
+
+/// profile section--starts//
+
+.team-roster__profiles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.team-roster__profile{
+	display:flex;
+	width:38%;
+	margin-top:10%;
+	font-size:0.5em;
+
+		a{
+			@extend %color-accent--dark;
+		}
+}
+
+.profile-underline{
+		height:1px;
+		background-color:tint($color-border, 70%);
+	}
+
+
+.profile-blog{
+	font-size:1.2em;
+}
+
+.profile-name{
+	font-size:2.2em;
+}
+
+.profile-job{
+	font-size:1.4em;
+	@extend %color-accent--dark;
+}
+
+.profile-img{
+	margin-top:10%;
+	margin-right:5%;
+	width:600px;
+	height:150px;
+	background-size:cover;
+	background-position: center;
+	
+}
+
+.chad-img{
+	background-image: url("../images/members-profile-pics/chadwin-Bartley-.jpg");
+}
+
+.camille-img{
+		background-image: url("../images/members-profile-pics/Camille-Bartley.jpg");
+
+}
+
+.tashana-img{
+		background-image: url("../images/members-profile-pics/tashana-thompson-hair-stylist.jpg");
+
+}
+
+.manpreet-img{
+		background-image: url("../images/members-profile-pics/manpreet-bhinder-.jpg");
+
+}
+
+.travis-img{
+		background-image: url("../images/members-profile-pics/Travis-Lakeram---Barber-.jpg");
+
+}
+
+.derek-img{
+		background-image: url("../images/members-profile-pics/Derek.jpg");
+
+}
+
+.kimberlee-img{
+		background-image: url("../images/members-profile-pics/kimberlee-Hair-stylist-.jpg");
+
+}
+
+.harpreet-img{
+		background-image: url("../images/members-profile-pics/harpreet-small.jpg");
+
+}
+
+
+
+
+
+
