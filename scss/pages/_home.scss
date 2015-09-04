@@ -1,5 +1,5 @@
 .services{
-  margin: 1% auto;
+  margin: 1em auto;
 }
 
 .services__container{
@@ -10,6 +10,10 @@
 .services__image{
   width: 50%;
   position: relative;
+
+  @include small-screen{
+    display: none;
+  }
 }
 
 .services-text__container{
@@ -19,6 +23,13 @@
   @include flex-direction(column);
   @include justify-content(center);
   @extend %transition--default;
+
+  @include small-screen{
+    width: 100%;
+    margin: em(10px) 0;
+    padding: em(30px) 0;
+  }
+
   .services a:hover &{
     background-color: $color-accent--dark;
     color: $color-text--light;
