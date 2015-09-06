@@ -1,29 +1,38 @@
 .footer{
 	@include pad(em(20px));
-	@include clearfix;
 	background-color: $color-footer;
 	color:$color-text--light;
 	.main-logo{
 		float: none;
 		width:100%;
+
+		@include small-screen{
+			width: 40%;
+		}
 	}
 	& .wrapper{
 		@include display(flex);
 		@include justify-content(space-between);
+
+		@include small-screen{
+			@include flex-direction(column);
+			@include align-items(center);
+		}
+		
 		&::after{
 			display:none;
 		}
 	}
 	.fa{
-	font-size:2em;
-	margin-right:6px;
-	color:darken($color-text--light, 40%);
-	@include transition(.2s);
+		font-size:2em;
+		margin-right:6px;
+		color:darken($color-text--light, 40%);
+		@include transition(.2s);
 
-	&:hover{
-		color:tint($color-text--light, 10%);
+		&:hover{
+			color:tint($color-text--light, 10%);
+		}
 	}
-}
 
 }
 
@@ -31,6 +40,16 @@
 	width: 30%;
 	flex-direction: column;
 	align-self:center;
+
+		@include small-screen{
+			order:2;
+			text-align: center;
+			width: em(320px);
+			@include display(flex);
+			margin-top: em(50px);
+			margin-bottom: em(25px);
+
+		}
 }
 
 
@@ -44,6 +63,10 @@
 	td{
 		padding:4px;
 	}
+
+		@include small-screen{
+			margin: em(50px) 0;
+		}
 }
 
 
@@ -51,6 +74,10 @@
 	@include display(flex);
 	@include justify-content(space-between);
   width: 70%;
+
+  @include small-screen{
+  	@include align-self(center);
+  }
 }
 
 .hours-table{
