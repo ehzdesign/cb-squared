@@ -461,12 +461,35 @@ p, td {
       margin-bottom: 0; }
 
 .services-heading__text-container {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.9) 90%, white), url("../images/mens-services__bg.jpg");
   background-size: contain;
   background-position: 100%;
   padding: 50px 40% 100px 5%;
   background-repeat: no-repeat;
   margin-top: 5%; }
+  @media screen and (max-width: 620px) {
+    .services-heading__text-container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-direction: column;
+      width: 70%;
+      margin-bottom: 5%;
+      background-position: 50%;
+      padding: initial; } }
 
 .services-heading__title, .team-roster__title,
 .services-list__title {
@@ -663,10 +686,19 @@ p, td {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 3% 0; }
+  @media screen and (max-width: 620px) {
+    .packages {
+      padding: 1.875em 0; } }
 
 .packages__package {
   border: 1px solid #5e5f5f;
   padding: 3%; }
+  @media screen and (max-width: 620px) {
+    .packages__package {
+      width: 70%; } }
+  @media screen and (max-width: 620px) {
+    .packages__package:not(:last-child) {
+      margin-bottom: 1.25em; } }
 
 .package__title {
   color: #B72F34; }
@@ -675,7 +707,7 @@ p, td {
   color: #ffffff; }
 
 .services-heading--womens {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/womens-hair.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.9) 90%, white), url("../images/womens-hair.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 120%; }

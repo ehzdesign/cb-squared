@@ -1,10 +1,19 @@
 .services-heading__text-container{
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/mens-services__bg.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 1)), url("../images/mens-services__bg.jpg");
     background-size: contain;
     background-position: 100%;
     padding: 50px 40% 100px 5%;
     background-repeat: no-repeat;
     margin-top: 5%;
+
+    @include small-screen{
+      @include display(flex);
+      @include flex-direction(column);
+      width: 70%;
+      margin-bottom: 5%;
+      background-position: 50%;
+      padding: initial;
+    }
   
 }
 

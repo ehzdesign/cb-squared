@@ -31,11 +31,23 @@
   @include justify-content(space-around);
   @include flex-wrap(wrap);
   @include padding(3% 0);
+
+  @include small-screen{
+    padding: em(30px) 0;
+  }
 }
 
 .packages__package{
   border: 1px solid $color-border;
   @include padding(3%);
+  @include small-screen{
+    width:70%;
+  }
+  &:not(:last-child){
+    @include small-screen{
+      margin-bottom: em(20px);
+    }
+  }
   // @extend %color-bg--dark;
 }
 
