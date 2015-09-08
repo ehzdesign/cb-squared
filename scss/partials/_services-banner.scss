@@ -18,6 +18,9 @@
     img{
       width:em(200px);
     }
+  @include small-screen{
+    display: none;
+  }
 }
 
 .services-banner__sidebar__list{
