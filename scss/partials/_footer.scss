@@ -42,7 +42,7 @@
 	@include align-self(center);
 
 		@include small-screen{
-			order:2;
+			@include order(2);
 			text-align: center;
 			width: em(320px);
 			@include display(flex);
