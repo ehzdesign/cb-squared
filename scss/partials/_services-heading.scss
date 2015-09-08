@@ -9,10 +9,11 @@
     @include small-screen{
       @include display(flex);
       @include flex-direction(column);
-      width: 70%;
+      width: 100%;
       margin-bottom: 5%;
       background-position: 50%;
-      padding: initial;
+      padding: em(20px) em(40px);
+      background: none;
     }
   
 }
@@ -23,5 +24,13 @@
   &::after{
   @extend %underline--accent;
 
+  }
+}
+
+.services-heading__title{
+  @include small-screen{
+    @include align-self(center);
+    width: 240px;
+    text-align: center;
   }
 }

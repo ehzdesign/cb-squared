@@ -1,7 +1,7 @@
 .services-list{
    @extend %center-text;
    @extend %uppercase;
-   margin: 10% auto;
+   margin: em(70px) auto;
    &__title{
     margin-top: 0;
     margin-bottom: 10%;
@@ -12,6 +12,12 @@
   @include display(flex);
   @include justify-content(space-around);
   @extend %center-text;
+
+  @include small-screen{
+    margin:em(20px) auto;
+    width: em(260px);
+    @include flex-direction(column);
+  }
 }
 
 .services-list__item:not(:last-child){
