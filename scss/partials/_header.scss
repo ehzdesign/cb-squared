@@ -15,7 +15,6 @@
       z-index: 100;
       background-color: $color-text--light;
       padding: 0 em(20px);
-      margin: em(20px) 0;
     }
 }
 
@@ -30,5 +29,6 @@
 
     @include small-screen{
       margin-bottom: initial;
+      margin: em(15px) 0;
     }
  }
