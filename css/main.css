@@ -136,7 +136,10 @@ p, td {
     .main-logo {
       width: 40%;
       margin-bottom: 2.1875em;
-      align-self: center; } }
+      -webkit-align-self: center;
+      -moz-align-self: center;
+      align-self: center;
+      -ms-flex-item-align: center; } }
   @media screen and (max-width: 620px) {
     .main-logo {
       margin-bottom: initial; } }
