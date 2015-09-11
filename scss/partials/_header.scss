@@ -12,9 +12,9 @@
 
     @include small-screen{
       position: fixed;
-      z-index: 100;
+      z-index: 1000;
       background-color: $color-text--light;
-      padding: 0 em(20px);
+      padding: em(20px);
     }
 }
 
@@ -28,8 +28,8 @@
     }
 
     @include small-screen{
-
-     margin: em(20px) 0;
+      margin-bottom: 0;
+     // margin: em(20px) 0;
 
     }
  }
