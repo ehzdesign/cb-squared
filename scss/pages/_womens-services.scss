@@ -4,6 +4,10 @@
    background-repeat: no-repeat;
    background-position: 120%;
 
+   @include small-screen{
+    background: none;
+   }
+
 }
 
 .services-column__list{
