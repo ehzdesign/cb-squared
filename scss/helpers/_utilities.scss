@@ -88,3 +88,9 @@
     @content;
   }
 }
+
+@mixin x-small-screen{
+  @media screen and(max-width: 330px){
+    @content;
+  }
+}
