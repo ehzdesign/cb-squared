@@ -67,6 +67,10 @@
 		@include small-screen{
 			margin: em(50px) 0;
 		}
+
+		@include x-small-screen{
+			font-size:em(11px);
+		}
 }
 
 
