@@ -16,31 +16,19 @@
 	align-items:center;
 	flex-direction:column;
 	padding: em(50px);
-
-
-	h1::after{
-		@extend %underline--accent;
-	}
-
-	p{
-		font-size:em(20px);
-		letter-spacing:0.3em;
-	}
-
-
-	h1::after{
-		@extend %underline--accent;
-	}
-
-	p{
-		font-size:em(20px);
-		letter-spacing:0.3em;
-		&:last-child{
-			font-style: italic;
+		
+		h1::after{
+			@extend %underline--accent;
 		}
-	}
-
-
+		
+		p{
+			font-size:em(20px);
+			letter-spacing:0.3em;
+			&:last-child{
+				font-style: italic;
+			}
+		}
+}
 
 
 //contact heading ends////
@@ -85,16 +73,6 @@
 	}
 }
 
-// .icon-box {
-// 	display:flex;
-// 	flex-direction:column;
-// 	align-items:center;
-// 	text-align:center;
-// 	padding:1%;
-// 	margin-top:4%;
-// 	font-size:1.1em;
-// }
-
 .contact-info__detail__icon{
 	width: em(50px);
 	height: auto;
@@ -103,13 +81,13 @@
 
 .contact-info__detail__text{
 	margin-top:em(40px);
-	p{
-		line-height: initial;
-	}
-	p:first-of-type{
-		font-weight: $font-weight--bold;
-		font-size: em(14px);
-	}
+		p{
+			line-height: initial;
+		}
+		p:first-of-type{
+			font-weight: $font-weight--bold;
+			font-size: em(14px);
+		}
 
 }
 
@@ -145,42 +123,31 @@
 	color:shade($color-text--light, 20%);
 	margin: 0 auto;
 	width:70%;
-	@include small-screen{
-		width: 90%;
-	}
-
-	input, textarea{
-		display:block;
-		width: 100%;
-		padding: em(10px);
-	}
-
-	input{
-		margin-bottom: em(20px);		
-	}
-
-
-	input, textarea, button {
-		@extend %bg--transparent;
-		border: 1px solid $color-border;
-	}
-
-	textarea{
-		height: em(250px);
-	}
-
-	input, textarea, button {
-		@extend %bg--transparent;
-		border: 1px solid $color-border;
-		&:focus{
-			outline-color: $color-accent--dark;
+		@include small-screen{
+			width: 90%;
 		}
-	}
 
-	textarea{
-		height: em(260px);
-	}
+		input, textarea{
+			display:block;
+			width: 100%;
+			padding: em(10px);
+		}
 
+		input{
+			margin-bottom: em(20px);		
+		}
+
+		input, textarea, button {
+			@extend %bg--transparent;
+			border: 1px solid $color-border;
+			&:focus{
+				outline-color: $color-accent--dark;
+			}
+		}
+
+		textarea{
+			height: em(260px);
+		}
 }
 
 .submitBtn{
@@ -192,4 +159,24 @@
 		border-color:$color-text--light;
 	}
 }
-}
+
+//contact form ends//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
