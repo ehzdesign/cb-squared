@@ -27,7 +27,8 @@
 
 .main-nav__slash{
   background-color: red;
-  @include size(1px null);
+  @include size(1px auto);
+
   position: relative;
   @include transform (rotate(15deg));
 }

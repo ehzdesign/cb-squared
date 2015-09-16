@@ -12,8 +12,10 @@
 
     @include small-screen{
       position: fixed;
-      z-index: 100;
+      z-index: 1000;
       background-color: $color-text--light;
+      padding-bottom: 0;
+      height: 15vmin;
     }
 }
 
@@ -23,10 +25,12 @@
     @include med-screen{
       width: 40%;
       margin-bottom: em(35px);
-      align-self: center;
+      @include align-self(center);
     }
 
     @include small-screen{
-      margin-bottom: initial;
+      margin-bottom: 0;
+     // margin: em(20px) 0;
+
     }
  }

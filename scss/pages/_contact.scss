@@ -16,6 +16,7 @@
 	align-items:center;
 	flex-direction:column;
 	padding: em(50px);
+<<<<<<< HEAD
 
 	h1::after{
 		@extend %underline--accent;
@@ -25,6 +26,20 @@
 		font-size:em(20px);
 		letter-spacing:0.3em;
 	}
+=======
+		
+		h1::after{
+			@extend %underline--accent;
+		}
+		
+		p{
+			font-size:em(20px);
+			letter-spacing:0.3em;
+			&:last-child{
+				font-style: italic;
+			}
+		}
+>>>>>>> 02b886f656c9837d3e29bd6dd92334aa7b15f014
 }
 
 
@@ -45,11 +60,29 @@
 	flex-wrap:wrap;
 	justify-content:space-around;
 	color:$color-text--light;
-	padding: 3% 0;
+	padding: em(40px) 0;
 }
 
 .contact-info__detail{
 	@extend %center-text;
+	@include flex-basis(250px);
+	@include flex-grow(1);
+}
+
+@media screen and (max-width:1017px){
+	.contact-info__detail:last-child{
+		margin-top: em(50px);
+	}
+}
+@media screen and (max-width:766px){
+	.contact-info__detail:nth-child(n+4){
+		margin-top: em(50px);
+	}
+}
+@media screen and (max-width:500px){
+	.contact-info__detail:not(:first-child){
+		margin-top: em(50px);
+	}
 }
 
 // .icon-box {
@@ -94,7 +127,7 @@
 .contact-form{
 	@extend %color-bg--dark;
 	color: $color-text--light;
-	padding: 10% 0;
+	padding: em(120px) 0;
 	h3{
 		text-align:center;
 		@extend %uppercase;
@@ -112,6 +145,9 @@
 	color:shade($color-text--light, 20%);
 	margin: 0 auto;
 	width:70%;
+		@include small-screen{
+			width: 90%;
+		}
 
 	input, textarea{
 		display:block;
@@ -123,6 +159,7 @@
 		margin-bottom: em(20px);		
 	}
 
+<<<<<<< HEAD
 	input, textarea, button {
 		@extend %bg--transparent;
 		border: 1px solid $color-border;
@@ -131,6 +168,19 @@
 	textarea{
 		height: em(250px);
 	}
+=======
+		input, textarea, button {
+			@extend %bg--transparent;
+			border: 1px solid $color-border;
+			&:focus{
+				outline-color: $color-accent--dark;
+			}
+		}
+
+		textarea{
+			height: em(260px);
+		}
+>>>>>>> 02b886f656c9837d3e29bd6dd92334aa7b15f014
 }
 
 .submitBtn{

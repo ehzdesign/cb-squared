@@ -1,8 +1,14 @@
+/*esthetics styles*/
 .services-heading--esthetics{
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/face.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 1)), url("../images/face.jpg");
   background-size: contain;
   background-position: 100%;
   padding: 50px 40% 100px 5%;
   background-repeat: no-repeat;
   margin-top: 5%;
+
+  @include small-screen{
+    background: none;
+    padding: em(20px) em(40px);
+  }
 }

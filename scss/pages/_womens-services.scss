@@ -1,8 +1,12 @@
 .services-heading--womens{
-   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/womens-hair.jpg");
+   background: linear-gradient(rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 1)), url("../images/womens-hair.jpg");
    background-size: contain;
    background-repeat: no-repeat;
    background-position: 120%;
+
+   @include small-screen{
+    background: none;
+   }
 
 }
 

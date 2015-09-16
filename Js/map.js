@@ -6,6 +6,7 @@ function initialize() {
   var mapOptions = {
     center: myLatLng,
     scrollwheel: false,
+    draggable: false,
     zoom: 18,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
