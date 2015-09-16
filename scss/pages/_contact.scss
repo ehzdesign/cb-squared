@@ -16,7 +16,7 @@
 	align-items:center;
 	flex-direction:column;
 	padding: em(50px);
-<<<<<<< HEAD
+
 
 	h1::after{
 		@extend %underline--accent;
@@ -26,21 +26,21 @@
 		font-size:em(20px);
 		letter-spacing:0.3em;
 	}
-=======
-		
-		h1::after{
-			@extend %underline--accent;
+
+
+	h1::after{
+		@extend %underline--accent;
+	}
+
+	p{
+		font-size:em(20px);
+		letter-spacing:0.3em;
+		&:last-child{
+			font-style: italic;
 		}
-		
-		p{
-			font-size:em(20px);
-			letter-spacing:0.3em;
-			&:last-child{
-				font-style: italic;
-			}
-		}
->>>>>>> 02b886f656c9837d3e29bd6dd92334aa7b15f014
-}
+	}
+
+
 
 
 //contact heading ends////
@@ -95,30 +95,30 @@
 // 	font-size:1.1em;
 // }
 
-	.contact-info__detail__icon{
-		width: em(50px);
-		height: auto;
-		margin: 0 auto;
+.contact-info__detail__icon{
+	width: em(50px);
+	height: auto;
+	margin: 0 auto;
+}
+
+.contact-info__detail__text{
+	margin-top:em(40px);
+	p{
+		line-height: initial;
+	}
+	p:first-of-type{
+		font-weight: $font-weight--bold;
+		font-size: em(14px);
 	}
 
-	.contact-info__detail__text{
-		margin-top:em(40px);
-		p{
-			line-height: initial;
-		}
-		p:first-of-type{
-			font-weight: $font-weight--bold;
-			font-size: em(14px);
-		}
+}
 
-	}
-
-	.contact-info__divider{
-		width: 1px;
-		background-color: rgba(45, 45, 45, 0.48);
-		height: em(140px);
-		align-self: center;
-	}
+.contact-info__divider{
+	width: 1px;
+	background-color: rgba(45, 45, 45, 0.48);
+	height: em(140px);
+	align-self: center;
+}
 
 //contact info ends//
 
@@ -145,9 +145,9 @@
 	color:shade($color-text--light, 20%);
 	margin: 0 auto;
 	width:70%;
-		@include small-screen{
-			width: 90%;
-		}
+	@include small-screen{
+		width: 90%;
+	}
 
 	input, textarea{
 		display:block;
@@ -159,7 +159,7 @@
 		margin-bottom: em(20px);		
 	}
 
-<<<<<<< HEAD
+
 	input, textarea, button {
 		@extend %bg--transparent;
 		border: 1px solid $color-border;
@@ -168,19 +168,19 @@
 	textarea{
 		height: em(250px);
 	}
-=======
-		input, textarea, button {
-			@extend %bg--transparent;
-			border: 1px solid $color-border;
-			&:focus{
-				outline-color: $color-accent--dark;
-			}
-		}
 
-		textarea{
-			height: em(260px);
+	input, textarea, button {
+		@extend %bg--transparent;
+		border: 1px solid $color-border;
+		&:focus{
+			outline-color: $color-accent--dark;
 		}
->>>>>>> 02b886f656c9837d3e29bd6dd92334aa7b15f014
+	}
+
+	textarea{
+		height: em(260px);
+	}
+
 }
 
 .submitBtn{
@@ -191,4 +191,5 @@
 	&:hover{
 		border-color:$color-text--light;
 	}
+}
 }
