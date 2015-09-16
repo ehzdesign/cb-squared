@@ -126,7 +126,8 @@ p, td {
       position: fixed;
       z-index: 1000;
       background-color: #ffffff;
-      padding: 1.25em; } }
+      padding-bottom: 0;
+      height: 15vmin; } }
 
 .main-logo {
   -webkit-flex-basis: 25%;

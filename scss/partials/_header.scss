@@ -14,7 +14,8 @@
       position: fixed;
       z-index: 1000;
       background-color: $color-text--light;
-      padding: em(20px);
+      padding-bottom: 0;
+      height: 15vmin;
     }
 }
 

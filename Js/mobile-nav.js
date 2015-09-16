@@ -38,5 +38,5 @@ jQuery(document).ready(function( $ ) {
             $("#menu-btn").click(function() {
                API.open();
             });
-
+            
          });
