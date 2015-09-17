@@ -14,7 +14,7 @@ h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
   font-family: "ostrich-sans--regular", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   letter-spacing: 0.25em; }
 
-.services-banner__sidebar__list, .services-text, .services-list, .services-list__table, .packages-section, .services-column__list, .team-roster__title__container, .contact-heading__title, .contact-info__detail {
+.services-banner__sidebar__list, .services-text, .services-list, .services-list__table, .packages-section, .services-column__list, .team-roster__title__container, .contact-heading__title, .contact-info__detail, .disclaimer-text .center, .disclaimer-heading__title {
   text-align: center; }
 
 .services-list, .package__title, .services-column__list, .bridal-offer, .contact-form h3 {
@@ -87,7 +87,7 @@ h2 {
 
 p, td {
   font-size: 0.6875em;
-  line-height: 20px; }
+  line-height: 22px; }
 
 /*header styles*/
 .header {
@@ -988,9 +988,28 @@ p, td {
   height: 8.75em;
   align-self: center; }
 
+.disclaimer {
+  color: #ffffff;
+  background-color: #212121;
+  padding: 6.25em 0; }
+  .disclaimer .wrapper {
+    padding: 0 2%; }
+
+.disclaimer-text {
+  font-size: 1.125em;
+  max-width: 46.25em;
+  margin: 0 auto; }
+  .disclaimer-text .center {
+    text-transform: uppercase; }
+
+.disclaimer-heading__title {
+  margin: 0;
+  padding: 1.25em 0;
+  line-height: 1.2; }
+
 .contact-form {
   color: #ffffff;
-  padding: 7.5em 0; }
+  padding: 6.25em 0; }
   .contact-form h3 {
     text-align: center;
     letter-spacing: 0.3em;

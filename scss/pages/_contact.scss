@@ -100,12 +100,46 @@
 
 //contact info ends//
 
+//disclaimer starts
+
+.disclaimer{
+	color: $color-text--light;
+	background-color: lighten($color-bg--dark, 2%);
+	padding: em(100px) 0;
+
+	.wrapper{
+			padding: 0 2%;
+	}
+
+}
+
+.disclaimer-text{
+		font-size: em(18px);
+		max-width: em(740px);
+		margin: 0 auto;
+
+	.center{
+		@extend %center-text;
+		// font-size: em(14px);
+		text-transform: uppercase;
+	}
+}
+
+
+.disclaimer-heading__title{
+	@extend %center-text;
+	margin: 0;
+	padding:em(20px) 0;
+	line-height: 1.2;
+}
+//disclaimer ends
+
 //contact form starts//
 
 .contact-form{
 	@extend %color-bg--dark;
 	color: $color-text--light;
-	padding: em(120px) 0;
+	padding: em(100px) 0;
 	h3{
 		text-align:center;
 		@extend %uppercase;
