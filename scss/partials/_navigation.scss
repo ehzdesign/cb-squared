@@ -3,13 +3,17 @@
   @include flex-basis(65%);
   @include align-items(center);
 
+    // @include med-screen{
+    //   margin-top: 5%;
+    // }
+
     @include small-screen{
       display: none;
     }
 }
 
 .main-nav{
-    @include flex-basis(100%);
+  @include flex-basis(100%);
   @include display(flex);
   @include justify-content(space-around);
   @extend %font-secondary;
