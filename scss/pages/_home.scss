@@ -64,7 +64,7 @@
 
 .services a:nth-child(2){
   .services-text__container{
-    order: -1;
+    @include order(-1);
   }
 }
 
@@ -86,7 +86,7 @@
   @extend %font-secondary;
   font-size: 1.5em;
   color: rgba($color-text--light,0);
-  transform:translateY(em(-20px));
+  @include transform(translateY(em(-20px)));
   @extend %transition--default;
   &::after{
     content: '';
@@ -105,6 +105,6 @@
   }
   .services a:hover &{
     color: $color-text--light;
-    transform:translateY(em(0px));
+    @include transform(translateY(em(0px)));
   }
 }
