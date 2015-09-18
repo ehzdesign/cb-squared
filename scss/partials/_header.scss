@@ -24,12 +24,15 @@
 
     @include med-screen{
       width: 40%;
-      margin-bottom: em(35px);
+      // margin-bottom: em(35px);
       @include align-self(center);
+      // padding-bottom: 8%;
+      min-height:80px;
     }
 
     @include small-screen{
       margin-bottom: 0;
+      min-height: initial;
      // margin: em(20px) 0;
 
     }
