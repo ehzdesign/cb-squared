@@ -29,8 +29,8 @@ h1, h2, .main-nav, .services-banner__sidebar__list, .services__more-info-link {
 .packages-section, .contact-heading, .contact-form {
   background-color: #1c1c1c; }
 
-.services-heading__title::after, .team-roster__title::after,
-.services-list__title::after, .contact-heading__title h1::after {
+.services-heading__title::after, .team-roster__title::after, .contact-heading__title h1::after,
+.services-list__title::after {
   content: '';
   height: 0.125rem;
   width: 40%;
@@ -137,14 +137,15 @@ p, td {
   @media screen and (max-width: 800px) {
     .main-logo {
       width: 40%;
-      margin-bottom: 2.1875em;
       -webkit-align-self: center;
       -moz-align-self: center;
       align-self: center;
-      -ms-flex-item-align: center; } }
+      -ms-flex-item-align: center;
+      min-height: 80px; } }
   @media screen and (max-width: 620px) {
     .main-logo {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      min-height: initial; } }
 
 .footer {
   padding: 1.25em;
@@ -522,12 +523,12 @@ p, td {
       padding: 1.25em 2.5em;
       background: none; } }
 
-.services-heading__title, .team-roster__title,
+.services-heading__title, .team-roster__title, .contact-heading__title h1,
 .services-list__title {
   display: inline-block; }
 
 @media screen and (max-width: 620px) {
-  .services-heading__title, .team-roster__title {
+  .services-heading__title, .team-roster__title, .contact-heading__title h1 {
     -webkit-align-self: center;
     -moz-align-self: center;
     align-self: center;
@@ -618,7 +619,13 @@ p, td {
     background-color: #ffffff; }
 
 .services a:nth-child(2) .services-text__container {
-  order: -1; }
+  -webkit-box-ordinal-group: -1;
+  -moz-box-ordinal-group: -1;
+  box-ordinal-group: -1;
+  -webkit-order: -1;
+  -moz-order: -1;
+  order: -1;
+  -ms-flex-order: -1; }
 
 .overlay--services {
   background-color: transparent;
@@ -653,6 +660,10 @@ p, td {
 .services__more-info-link {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0);
+  -webkit-transform: translateY(-1.25em);
+  -moz-transform: translateY(-1.25em);
+  -ms-transform: translateY(-1.25em);
+  -o-transform: translateY(-1.25em);
   transform: translateY(-1.25em); }
   .services__more-info-link::after {
     content: '';
@@ -667,6 +678,10 @@ p, td {
       border-color: transparent transparent transparent #b72f33; }
   .services a:hover .services__more-info-link {
     color: #ffffff;
+    -webkit-transform: translateY(0em);
+    -moz-transform: translateY(0em);
+    -ms-transform: translateY(0em);
+    -o-transform: translateY(0em);
     transform: translateY(0em); }
 
 .services-list {
@@ -944,9 +959,29 @@ p, td {
   background-color: #B72F34; }
 
 .contact-info-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
   justify-content: space-around;
+  -ms-flex-pack: distribute;
   color: #ffffff;
   padding: 2.5em 0; }
 
@@ -986,7 +1021,10 @@ p, td {
   width: 1px;
   background-color: rgba(45, 45, 45, 0.48);
   height: 8.75em;
-  align-self: center; }
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center; }
 
 .disclaimer {
   color: #ffffff;
