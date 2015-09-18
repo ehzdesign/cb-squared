@@ -16,6 +16,10 @@
 	align-items:center;
 	flex-direction:column;
 	padding: em(50px);
+
+		h1{
+			@extend .services-heading__title;
+		}
 		
 		h1::after{
 			@extend %underline--accent;
@@ -44,9 +48,9 @@
 }
 
 .contact-info-container{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	@include justify-content(space-around);
 	color:$color-text--light;
 	padding: em(40px) 0;
 }
@@ -95,7 +99,7 @@
 	width: 1px;
 	background-color: rgba(45, 45, 45, 0.48);
 	height: em(140px);
-	align-self: center;
+	@include align-self (center);
 }
 
 //contact info ends//
