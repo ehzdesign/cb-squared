@@ -1292,4 +1292,9 @@ p, td {
   .over-lay:hover {
     opacity: 0.3; }
 
+.hero-txt {
+  text-align: center;
+  font-size: 3.125em;
+  display: block; }
+
 /*# sourceMappingURL=main.css.map */

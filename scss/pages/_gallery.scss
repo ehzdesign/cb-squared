@@ -10,6 +10,7 @@
 .photo-wrap{
 	@include display(flex);
 	@include flex-wrap(wrap);
+	border:1px solid blue;
 }
 
 .img-wrap1{
@@ -235,3 +236,31 @@
 		opacity:0.3;
 	}
 }
+
+
+
+
+.hero-txt{
+	text-align:center;
+	font-size: em(50px);
+	display:block;
+
+}
+
+
+.mens-img-section{
+	border:1px solid red;
+	width:45%;
+}
+
+.womens-img-section{
+	border:1px solid black;
+	width:45%;
+}
+
+
+
+
+
+
+
