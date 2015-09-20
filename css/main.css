@@ -1125,7 +1125,8 @@ p, td {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border: 1px solid black; }
+  border: 1px solid black;
+  margin-bottom: 3%; }
 
 .img-wrap1 {
   background-image: url("../images/gallery pics/pic1.jpg"); }
@@ -1279,9 +1280,9 @@ p, td {
 
 .img-wrap {
   width: 150px;
-  height: 200px;
+  height: 150px;
   flex-grow: 1;
-  margin: 1%;
+  margin: 0.5%;
   background-size: cover;
   background-position: center; }
 
@@ -1300,14 +1301,11 @@ p, td {
 
 .womens-img-section,
 .mens-img-section {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   height: 450px;
   overflow: scroll; }
-
-.womens-img-section {
-  border-left: 4px solid #5e5f5f; }
 
 .mens-section-lbl {
   font-size: 2.5em;
@@ -1316,6 +1314,19 @@ p, td {
   position: absolute;
   background-color: white;
   width: 40%;
-  z-index: 50; }
+  z-index: 50;
+  display: none; }
+
+.division {
+  height: 50px;
+  width: 100%;
+  background-color: #5e5f5f; }
+
+.top-div {
+  background-color: white; }
+
+.instafeed {
+  display: flex;
+  flex-direction: row; }
 
 /*# sourceMappingURL=main.css.map */
