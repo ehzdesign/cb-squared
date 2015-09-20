@@ -1124,7 +1124,8 @@ p, td {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: 1px solid black; }
 
 .img-wrap1 {
   background-image: url("../images/gallery pics/pic1.jpg"); }
@@ -1277,8 +1278,8 @@ p, td {
   background-image: url("../images/gallery pics/pic50.jpg"); }
 
 .img-wrap {
-  width: 170px;
-  height: 150px;
+  width: 150px;
+  height: 200px;
   flex-grow: 1;
   margin: 1%;
   background-size: cover;
@@ -1296,5 +1297,25 @@ p, td {
   text-align: center;
   font-size: 3.125em;
   display: block; }
+
+.womens-img-section,
+.mens-img-section {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+  overflow: scroll; }
+
+.womens-img-section {
+  border-left: 4px solid #5e5f5f; }
+
+.mens-section-lbl {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 16%;
+  position: absolute;
+  background-color: white;
+  width: 40%;
+  z-index: 50; }
 
 /*# sourceMappingURL=main.css.map */
