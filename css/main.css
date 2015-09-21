@@ -1320,13 +1320,17 @@ p, td {
 .division {
   height: 50px;
   width: 100%;
-  background-color: #5e5f5f; }
+  background-color: #ffffff; }
 
 .top-div {
   background-color: white; }
 
 .instafeed {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row; }
+
+.div-lbl {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
