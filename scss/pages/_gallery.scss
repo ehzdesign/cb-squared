@@ -201,7 +201,7 @@
 }
 
 .img-wrap39{
-	background-image: url("../images/gallery pics/thumbnails/mens/Mpics26.jpg");
+	background-image: url("../images/gallery pics/thumbnails/mens/Mpic26.jpg");
 }
 
 .img-wrap40{
@@ -221,7 +221,7 @@
 }
 
 .img-wrap44{
-	background-image: url("../images/gallery pics/thumbnails/mens/Mpi31.jpg");
+	background-image: url("../images/gallery pics/thumbnails/mens/Mpic31.jpg");
 }
 
 .img-wrap45{
@@ -256,12 +256,13 @@
 
 
 .img-wrap{
-	width:150px;
+	//width:150px;
 	height:150px;
 	flex-grow:1;
 	margin:0.5%;
 	background-size:cover;
 	background-position: center;
+	@include flex-basis(em(170px));
 }
 
 .over-lay{
