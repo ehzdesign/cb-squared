@@ -1,22 +1,20 @@
 {
-  "name": "cb-squared",
+  "name": "web-programming-3-assignment-1",
   "version": "1.0.0",
-  "description": "hair studio website",
+  "description": "assignment-1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ehzdesign/cb-squared.git"
-  },
-  "author": "Digital Panda",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ehzdesign/cb-squared/issues"
-  },
-  "homepage": "https://github.com/ehzdesign/cb-squared#readme",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1"
   }
 }
