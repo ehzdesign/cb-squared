@@ -13,6 +13,7 @@ var feed = new Instafeed({
   userId: 214372068,
   limit: 21,
   resolution: "thumbnail",
+  //template: "<a href="{{link}}"><img src="{{image}}" /></a>",
   accessToken: "214372068.cf0499d.6b8811f629984ecabd8c6d8a758b631f",
   after: function() {
     // disable button if no more results to load
