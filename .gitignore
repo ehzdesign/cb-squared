@@ -3,3 +3,5 @@
 *.css.map
 
 ftpsync.settings
+
+node_modules
