@@ -2,7 +2,7 @@
    background: linear-gradient(rgba(255, 255, 255, 0.9) 90%, rgba(255, 255, 255, 1)), url("../images/womens-hair.jpg");
    background-size: contain;
    background-repeat: no-repeat;
-   background-position: 120%;
+   background-position: 100%;
 
    @include small-screen{
     background: none;
@@ -11,7 +11,7 @@
 }
 
 .services-column__list{
-  margin:em(30px) auto;
+  margin:em(200px) auto em(100px);
   width: 80%;
   @extend %center-text;
   @extend %uppercase;
@@ -50,7 +50,7 @@
   text-align:center;
   color: $color-accent--dark;
   @extend %uppercase;
-  margin: em(50px) 0;
+  margin: em(50px) 0 em(150px);
     p{
       font-size: em(14px);
     }

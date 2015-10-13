@@ -1,10 +1,11 @@
 .footer{
-	@include pad(em(20px));
+	@include pad(em(60px) em(50px));
 	background-color: $color-footer;
 	color:$color-text--light;
+	font-weight: 100;
 	.main-logo{
 		float: none;
-		width:100%;
+		width:80%;
 
 		@include small-screen{
 			width: 40%;
@@ -37,7 +38,7 @@
 }
 
 .footer__contact{
-	width: 30%;
+	width: 25em;
 	@include flex-direction(column);
 	@include align-self(center);
 
@@ -54,8 +55,7 @@
 
 
 .footer__contact-info{
-	margin-top: 6%;
-	margin-bottom:4%;
+	margin: em(36px) 0;
 }
 
 

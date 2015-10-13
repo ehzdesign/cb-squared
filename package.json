@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ehzdesign/cb-squared#readme",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }

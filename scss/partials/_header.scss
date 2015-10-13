@@ -1,10 +1,11 @@
 /*header styles*/
 
 .header{
-  width:100%;
+  max-width:em(1440px);
   @include display(flex);
   @include justify-content(space-between);
   @include pad(em(20px));
+  margin: 0 auto;
 
     @include med-screen{
       @include flex-direction(column);
@@ -22,6 +23,10 @@
 .main-logo{
   @include flex-basis(25%);
 
+  footer &{
+    min-height:auto;
+  }
+
     @include med-screen{
       width: 40%;
       // margin-bottom: em(35px);
@@ -37,3 +42,4 @@
 
     }
  }
+
