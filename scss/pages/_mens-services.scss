@@ -1,7 +1,7 @@
 .services-list{
    @extend %center-text;
    @extend %uppercase;
-   margin: em(70px) auto;
+   margin: em(180px) auto;
    &__title{
     margin-top: 0;
     margin-bottom: 10%;
@@ -33,10 +33,10 @@
 }
 
 .packages{
-  @include display(flex);
+  display: flex;
   @include justify-content(space-around);
   @include flex-wrap(wrap);
-  @include padding(3% 0);
+  @include padding(em(100px) 0);
 
   @include small-screen{
     padding: em(30px) 0;

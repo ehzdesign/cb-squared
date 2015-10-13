@@ -17,12 +17,14 @@
   @include display(flex);
   @include justify-content(space-around);
   @extend %font-secondary;
+  font-size: 1.2em;
 }
 
 .main-nav a{
   color: $color-text--dark;
   text-decoration: none;
   position: relative;
+  font-weight: bold;
   @include transition(color 0.3s ease-in-out);
   &:hover{
     color: $color-accent--light;

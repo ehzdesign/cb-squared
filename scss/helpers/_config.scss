@@ -32,8 +32,10 @@ $color-text--light       : $white;
 
 @include font-face('ostrich-sans--regular', '../fonts/ostrich-sans/ostrich-regular' );
 
-$font-url--google       : 'http://fonts.googleapis.com/css?family=Karla:400,700,400italic';
-$font-family--primary   : 'Karla', $helvetica;
+// $font-url--google       : 'http://fonts.googleapis.com/css?family=Karla:400,700,400italic';
+$font-url--google       : 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic';
+// $font-family--primary   : 'Karla', $helvetica;
+$font-family--primary   : 'Open Sans', $helvetica;
 $font-family--secondary : 'ostrich-sans--regular', $lucida-grande;
 
 

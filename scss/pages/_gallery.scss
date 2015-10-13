@@ -1,7 +1,13 @@
 .photo-gallery{
 	@extend %center-text;
 	min-height: 80vh;
+
+	.wrapper{
+		max-width: 50em;
+	}
 }
+
+
 
 .gallery-heading__title{
 	@extend .services-heading__title;

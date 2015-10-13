@@ -1,10 +1,11 @@
 html{
   font-family: $font-family--primary;
   color: $color-text--dark;
-  letter-spacing: em(2px); 
+  letter-spacing: em(1px); 
+  font-size: 16px;
 
    @include med-screen{
-    font-size: 14px;
+    font-size: calc(.6em + 1vw);
   }  
 }
 
@@ -20,10 +21,10 @@ h1{
 
 h2{
   @extend %font-secondary;
-  font-size: em(24px);
+  font-size: em(32px);
 }
 
 p, td{
-  font-size:em(11px);
-  line-height: 22px;
+  font-size:em(14px);
+  line-height: 26px;
 }

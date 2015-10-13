@@ -107,7 +107,7 @@
 //disclaimer starts
 
 .disclaimer{
-	color: $color-text--light;
+	color: shade($color-text--light, 10%);
 	background-color: lighten($color-bg--dark, 2%);
 	padding: em(100px) 0;
 

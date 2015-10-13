@@ -84,7 +84,7 @@
 
 .services__more-info-link{
   @extend %font-secondary;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: rgba($color-text--light,0);
   @include transform(translateY(em(-20px)));
   @extend %transition--default;
@@ -96,7 +96,7 @@
     border-width: (12px 0 12px 15px);
     border-color: transparent;
     position: absolute;
-    top: -0.15em;
+    top: -0.05em;
     @extend %transition--default;
     .services a:hover &{
       border-color: transparent transparent transparent #b72f33;
